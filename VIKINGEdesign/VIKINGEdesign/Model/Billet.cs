@@ -10,7 +10,7 @@ namespace VIKINGEdesign.Model
     {
         private int _billetId;
         private int _kundeId;
-        private int _antalBørn;
+        private int _antalBorn;
         private int _antalVoksne;
         private bool _sejltur;
         private DateTime _dateTime;
@@ -28,10 +28,10 @@ namespace VIKINGEdesign.Model
             set { _kundeId = value; }
         }
 
-        public int AntalBørn
+        public int AntalBorn
         {
-            get { return _antalBørn; }
-            set { _antalBørn = value; }
+            get { return _antalBorn; }
+            set { _antalBorn = value; }
         }
 
         public int AntalVoksne
