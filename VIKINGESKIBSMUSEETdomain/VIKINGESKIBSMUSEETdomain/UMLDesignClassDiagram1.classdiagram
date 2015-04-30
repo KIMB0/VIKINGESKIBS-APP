@@ -8,6 +8,24 @@
           <packageHasNamedElement>
             <class Id="feb34529-c1ef-4f16-a201-e88fcd6f87d8" name="Frontpage1" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="93ecc695-d5ae-428a-92fc-082ca564703e" />
+              <targetEnds>
+                <association Id="40f96ce4-5034-4733-b9b6-bdf082ca6c3b" isDerived="false" sourceEndRoleName="Frontpage1" targetEndRoleName="MainViewModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="2672ddcd-e00c-451a-9f62-fd786fc0b3f2" LastKnownName="MainViewModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f03d5271-754d-42cb-98fc-9170ffee295f" name="Frontpage1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="14d50311-6e9f-4069-8723-d9a1c02eed08" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3b8e8173-e72c-483a-afa2-114a780af607" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="d89fc859-73c2-47f0-b615-06756883a62d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="9e0ef1d6-536b-4414-b25c-31c1312e7121" />
+                </association>
+              </targetEnds>
             </class>
           </packageHasNamedElement>
         </packagedElements>
@@ -20,6 +38,24 @@
           <packageHasNamedElement>
             <class Id="2672ddcd-e00c-451a-9f62-fd786fc0b3f2" name="MainViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="f33ae015-f15a-4b8f-a76a-d3c1bd32fe21" />
+              <targetEnds>
+                <association Id="a73cc93c-73d3-44d7-9d5a-c3b35e5612eb" isDerived="false" sourceEndRoleName="MainViewModel" targetEndRoleName="SingleTonViewModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="20415825-1cf0-46d6-bb30-b8d12c83871b" LastKnownName="SingleTonViewModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b2385549-8130-4936-aa6d-b4a0e19050c9" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4a8ff568-6538-4ef4-88ca-88fae1d096cc" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f6018245-715e-468d-be1a-c7f87bfcee46" name="SingleTonViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ec42952e-b3e5-40af-a828-7a26b762aed2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="cadd14fc-fffe-4dd7-ab51-19101fec724b" />
+                </association>
+              </targetEnds>
               <ownedAttributesInternal>
                 <property Id="4933ea47-e40e-4c64-b103-e98584c74c25" name="SingleTonViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="f48c5062-bff2-47a5-96fc-e60f2adb2eb5" />
@@ -33,6 +69,34 @@
           <packageHasNamedElement>
             <class Id="20415825-1cf0-46d6-bb30-b8d12c83871b" name="SingleTonViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="506767e7-27bb-43fd-b814-5dd578f7ac92" />
+              <targetEnds>
+                <association Id="79bc8eb4-725d-4aaf-9873-14e3836e27f3" isDerived="false" sourceEndRoleName="SingleTonViewModel" targetEndRoleName="Vikingeskib" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e2b6ece3-c4a9-4e49-b2a6-cbdd7776d214" LastKnownName="Vikingeskib" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="372a31f2-ba38-4a85-9008-3a995f7196b2" name="SingleTonViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="fd6130c7-23ac-478b-ba4c-3c2f2f762d2a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a412591d-f30d-420d-bb83-fc1a38a297ec" name="Vikingeskib" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="c25c1ff5-ad18-45e6-90db-855ed3acb161" name="Lower" value="*">
+                            <elementDefinition Id="4d1904fe-7202-4bd2-89ef-6ca84c7a4321" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="b82667b9-c80d-4cc2-83bd-6a0c8a6dc4da" name="Upper" value="*">
+                            <elementDefinition Id="9dc5cd59-ae3e-4990-88e1-5b236f0517c8" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="f83e1342-7c81-4bd2-bd2f-98ca167073ef" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="ea55a7da-ac5f-4236-be03-0799cdb758bf" />
+                </association>
+              </targetEnds>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -69,6 +133,34 @@
           <packageHasNamedElement>
             <class Id="7563ac3a-7d85-4152-8246-f01d6663e59e" name="Kunde" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="40ff414b-7b33-4e2a-9395-c234d064a7e7" />
+              <targetEnds>
+                <association Id="c69c5bc6-bf5c-4082-8ad4-fef326abfc01" isDerived="false" sourceEndRoleName="Kunde" targetEndRoleName="Billet" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="f6c9249a-7f55-4a48-b519-b301f3a893fb" LastKnownName="Billet" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="19359079-8def-4e70-8ce6-0f458fb87334" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="1192a8ac-ed80-4c0f-82d7-9a790d101420" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="37d9086b-d740-4ea3-9c9b-959d42cb090f" name="Billet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="e5192209-6971-45f2-98ae-142997e54006" name="Lower" value="*">
+                            <elementDefinition Id="4e73a879-1ee1-45e6-854c-6a11c2fb9c4a" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="dc761e22-32cd-49bf-997c-39b5b012cad7" name="Upper" value="*">
+                            <elementDefinition Id="b004d07a-c212-437a-beb6-ddebb7cea1d4" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="1ad78559-2b09-402d-aa4e-82b796b545d5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="05f45927-cacb-4989-839d-f2bb6b1aadaa" />
+                </association>
+              </targetEnds>
               <ownedAttributesInternal>
                 <property Id="21bf3274-e4e6-40e7-b95b-0c393bcb67fd" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="0bdde8e5-1ddb-47ca-8434-048afc36478e" />
@@ -79,7 +171,7 @@
                 <property Id="825fea57-ca21-4b5e-b4f7-813c9db427d1" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="d46daff8-1aa0-45cc-86fc-a77cd00473f3" />
                 </property>
-                <property Id="25bded7c-5028-4962-8537-57ac78c84e8d" name="KundeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="25bded7c-5028-4962-8537-57ac78c84e8d" name="Kunde_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="9d881e3c-dc5e-476a-aeb6-76a2058fd4f6" />
                 </property>
               </ownedAttributesInternal>
@@ -103,6 +195,12 @@
                 </property>
                 <property Id="38b7665e-1295-4928-9116-433abe2b0a1f" name="Årstid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="26b42a1a-4d3d-4563-a0df-2580ab2a102a" />
+                </property>
+                <property Id="efbb2af3-9be2-4db3-bfdb-69277042e90b" name="Kunde_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ea74979f-a01a-4d1f-9e76-c8aa76adb2db" />
+                </property>
+                <property Id="af54f309-62b6-464d-b287-bf9db155a351" name="Billet_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="28b646f4-a8e2-4ef5-8a57-4d11f2ad16a7" />
                 </property>
               </ownedAttributesInternal>
             </class>
