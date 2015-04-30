@@ -115,7 +115,7 @@
             isComposite="false" />
           <property
             Id="41a2e2b4-dfd7-4f88-a9bb-c769f4b15f49"
-            name="KundeId"
+            name="Kunde_id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -170,7 +170,7 @@
             isComposite="false" />
           <property
             Id="4190ff85-657d-43a8-a1cd-92efae829d6f"
-            name="Type"
+            name="Sejltur"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -203,7 +203,18 @@
             isComposite="false" />
           <property
             Id="65a413d5-e6c0-476b-8d24-b7e5f8698324"
-            name="KundeId"
+            name="Kunde_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f4edaa98-8341-4354-974f-9318289b3d8d"
+            name="Billet_id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -352,7 +363,7 @@
             isComposite="false" />
           <property
             Id="ca0b10d6-408c-41c6-b4e1-57f5640d2650"
-            name="Plads"
+            name="Pladser"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

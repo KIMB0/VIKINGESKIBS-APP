@@ -42,7 +42,7 @@
           <property Id="e23afc72-8ffa-46c1-98b1-8fc75bd5624a" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="5b1da6c0-3fe2-4b5e-b04c-14cebba7836e" />
           </property>
-          <property Id="2326e7c5-f3f6-4351-ae34-6e41cc27d2db" name="KundeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="2326e7c5-f3f6-4351-ae34-6e41cc27d2db" name="Kunde_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="41a2e2b4-dfd7-4f88-a9bb-c769f4b15f49" />
           </property>
         </ownedAttributesInternal>
@@ -61,7 +61,7 @@
           <property Id="9b46088f-00c9-4130-8e23-a9f4dde1b5c1" name="AntalBørn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e87fccea-5c13-46e4-8679-3047467fb2d7" />
           </property>
-          <property Id="484807f6-4a95-4dfc-a974-5870cd972861" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="484807f6-4a95-4dfc-a974-5870cd972861" name="Sejltur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4190ff85-657d-43a8-a1cd-92efae829d6f" />
           </property>
           <property Id="55d92c52-c0d4-4a43-a1b4-6ef53ef1a877" name="Årstid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -70,8 +70,11 @@
           <property Id="0fc04b8f-c266-4229-89af-553710aeb939" name="AntalVoksne" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0bc069c4-c8bd-4cee-89c1-4d826378dbd0" />
           </property>
-          <property Id="8fe8fad1-2fa4-42c9-88db-b7e6313d567c" name="KundeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="8fe8fad1-2fa4-42c9-88db-b7e6313d567c" name="Kunde_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="65a413d5-e6c0-476b-8d24-b7e5f8698324" />
+          </property>
+          <property Id="77bb7aff-401c-4e11-9324-71fd407f0f36" name="Billet_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4edaa98-8341-4354-974f-9318289b3d8d" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -111,7 +114,7 @@
           <property Id="ba2b2968-d345-4e19-9cc4-85a6cfcf731a" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="08d32f5a-3367-48c0-804c-9e182a793d78" />
           </property>
-          <property Id="d66e931f-fb4c-48c0-bb95-79917657ba06" name="Plads" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="d66e931f-fb4c-48c0-bb95-79917657ba06" name="Pladser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ca0b10d6-408c-41c6-b4e1-57f5640d2650" />
           </property>
           <property Id="c8f713e1-f6fa-43bb-bd6d-08da3b690362" name="Instruktøre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
