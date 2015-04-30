@@ -16,7 +16,7 @@ CREATE TABLE Billeter(
 	 AntalBorn   int    NOT NULL,
      AntalVoksen  int    NOT NULL,
      Dato DATETIME NOT NULL,
-     Price     FLOAT,
+     Price     FLOAT NOT NULL,
 	 Sejltur bit
 );
 
