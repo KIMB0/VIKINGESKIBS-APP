@@ -99,11 +99,6 @@
               </targetEnds>
             </class>
           </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="ee64382e-8413-4b45-bcfb-12a7d525223a" name="BookingHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d" />
-            </class>
-          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -203,6 +198,11 @@
                   <elementDefinition Id="28b646f4-a8e2-4ef5-8a57-4d11f2ad16a7" />
                 </property>
               </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ee64382e-8413-4b45-bcfb-12a7d525223a" name="BookingHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d" />
             </class>
           </packageHasNamedElement>
         </packagedElements>

@@ -138,14 +138,6 @@
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <class
-        Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d"
-        name="BookingHandler"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <undefinedType
         Id="72a08d53-c927-489c-9491-e957b8309217"
         name="Instans" />

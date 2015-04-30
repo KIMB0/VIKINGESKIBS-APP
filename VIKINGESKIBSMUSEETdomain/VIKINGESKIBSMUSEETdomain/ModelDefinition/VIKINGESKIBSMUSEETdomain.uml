@@ -201,6 +201,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="65a413d5-e6c0-476b-8d24-b7e5f8698324"
+            name="KundeId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -374,7 +385,7 @@
         <ownedAttributesInternal>
           <property
             Id="2e7d92e0-2a2d-4f58-aa7a-af3404ae15d3"
-            name="Skib"
+            name="Billet_id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -385,7 +396,7 @@
             isComposite="false" />
           <property
             Id="b400bcb4-10a9-4e89-89bb-afb8f2194437"
-            name="Antal"
+            name="Booking_id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -395,41 +406,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="2086f6ef-1ca9-45f2-b8b3-9b0c74539334"
-            name="Sejltur"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="4d9d56c2-b132-464f-a144-614961aa7db1"
-            name="BookingId"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="a0577c1c-6027-467b-8562-0d698aff3102"
-            name="KundeId"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="1ba28208-ee98-4c76-96e0-1d22074bac89"
-            name="Navn"
+            Id="439053b8-a89d-4c15-a11d-88ccc9d60880"
+            name="Kunde_id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
