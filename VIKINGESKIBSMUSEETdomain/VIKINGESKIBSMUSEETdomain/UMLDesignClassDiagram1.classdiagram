@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="66bdc6cc-841e-4d66-95ef-20f373395bfb" name="UMLDesignClassDiagram1" linkedPackageId="41fe893f-753d-48da-aa60-e49ba0d62619" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="cf27907a-2d0a-46d9-a323-d75af2d5932e" name="View">
+        <elementDefinition Id="dab9a32d-b769-4ff9-ab8b-5958b0b370d9" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="feb34529-c1ef-4f16-a201-e88fcd6f87d8" name="Frontpage1" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="93ecc695-d5ae-428a-92fc-082ca564703e" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3d8e7537-ee73-4fd5-8a06-4b0c05dc57e4" name="ViewModel">
+        <elementDefinition Id="07c93ad9-eb46-437a-bac3-32d240bf9e2f" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="2672ddcd-e00c-451a-9f62-fd786fc0b3f2" name="MainViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f33ae015-f15a-4b8f-a76a-d3c1bd32fe21" />
+              <ownedAttributesInternal>
+                <property Id="4933ea47-e40e-4c64-b103-e98584c74c25" name="SingleTonViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f48c5062-bff2-47a5-96fc-e60f2adb2eb5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="eda208f4-17dd-4232-a60f-723816005010" LastKnownName="Instans" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="20415825-1cf0-46d6-bb30-b8d12c83871b" name="SingleTonViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="506767e7-27bb-43fd-b814-5dd578f7ac92" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ee64382e-8413-4b45-bcfb-12a7d525223a" name="BookingHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d51860ce-3654-4283-8f82-c244c3dcb326" name="Model">
+        <elementDefinition Id="268b98f3-5d40-4380-afe5-0b3b8b6fa5fe" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="e2b6ece3-c4a9-4e49-b2a6-cbdd7776d214" name="Vikingeskib" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b7c4f43f-3ed5-4e48-b576-bf6862b7afb0" />
+              <ownedAttributesInternal>
+                <property Id="a5186edc-7cd3-4a89-b8ad-b5096bf3a4dc" name="Instruktøre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="46ab05c6-e656-47bb-b458-738bd2448220" />
+                </property>
+                <property Id="3d3fc22f-fcee-453a-a101-d8e2081809fc" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6d2b533-c0a7-41d3-8037-cf48ed27f82e" />
+                </property>
+                <property Id="ed94347e-2c6b-4003-a35a-6906904d4063" name="Pladser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76cbea6c-f7d3-4bc2-a761-b4f028ed26dd" />
+                </property>
+                <property Id="7e9f2eb6-1b3a-4422-8995-286956bb0a1e" name="Skibs_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="67cdce2c-ea37-4890-a5c4-e40e051a99e8" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7563ac3a-7d85-4152-8246-f01d6663e59e" name="Kunde" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="40ff414b-7b33-4e2a-9395-c234d064a7e7" />
+              <ownedAttributesInternal>
+                <property Id="21bf3274-e4e6-40e7-b95b-0c393bcb67fd" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0bdde8e5-1ddb-47ca-8434-048afc36478e" />
+                </property>
+                <property Id="708714b4-81e3-46c0-8b73-9bf85bbdea8a" name="TelefonNr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a29a6e36-8f04-4120-ab49-84ba8e83226b" />
+                </property>
+                <property Id="825fea57-ca21-4b5e-b4f7-813c9db427d1" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d46daff8-1aa0-45cc-86fc-a77cd00473f3" />
+                </property>
+                <property Id="25bded7c-5028-4962-8537-57ac78c84e8d" name="KundeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9d881e3c-dc5e-476a-aeb6-76a2058fd4f6" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f6c9249a-7f55-4a48-b519-b301f3a893fb" name="Billet" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="857c875b-e5fb-429b-a82b-29e440470949" />
+              <ownedAttributesInternal>
+                <property Id="831ed1bc-4d11-4f24-ad81-d1b8b7a44aca" name="Pris" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13123ba5-6fd9-4f5f-9dac-2593f3ae1458" />
+                </property>
+                <property Id="38d00deb-f3c9-46f9-8f2e-220b4c8cfa59" name="Dato" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e46f231e-850a-461a-a881-2f05303c4383" />
+                </property>
+                <property Id="401bd558-5519-4a51-91b3-8518c5ad1ac1" name="Antal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="66a41655-757b-4b8a-8bd0-402effc9dc9f" />
+                </property>
+                <property Id="42dc7f05-cc0c-4e75-b047-dd26aa1a212a" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="73542d0c-7e37-4a7f-ab4d-cf2a6a672846" />
+                </property>
+                <property Id="38b7665e-1295-4928-9116-433abe2b0a1f" name="Årstid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="26b42a1a-4d3d-4563-a0df-2580ab2a102a" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="eda208f4-17dd-4232-a60f-723816005010" name="Instans" isAbstract="false" isLeaf="false" cachedFullName="Instans">
+        <elementDefinition Id="72a08d53-c927-489c-9491-e957b8309217" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="41fe893f-753d-48da-aa60-e49ba0d62619" name="VIKINGESKIBSMUSEETdomain">
+    <elementDefinition Id="40f873af-ff2b-4e31-ba85-b79369f181e3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d3321db2-f1cc-4592-ae84-66519d118cc5">
+        <profileInstance Id="2dc30036-ccf5-4147-ad0d-3305fc956f96" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d3f1858d-c395-432c-9407-481264fe90aa">
+        <profileInstance Id="2d0a5c78-587b-4240-986b-6f592e5e0a29" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

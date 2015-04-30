@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="6ce22a25-bb1e-40b3-965c-c0afbfe69718" name="Sequence1" linkedPackageId="f282aafc-376b-4123-b3c1-ec4d406b43fd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="493fd00f-93a6-44b7-b835-810c222a943d" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="4f869e38-559a-450b-abf2-db8d854d5c69" />
+        <fragments>
+          <behaviorExecutionSpecification Id="269e60c5-fb39-4ca4-b7f4-136342fc7953" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="30f4c5b0-df16-4a5a-8a43-409ac20dac24" />
+            <coveredLifelines>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="7814bee1-80d8-408a-982e-1b6898672d7c" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="c170d889-d00b-4363-971a-4f37b9e80d16" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="55d9ef6a-7f67-4d82-a821-520dd3e4efc9" LastKnownName="MessageOccurrenceSpecification2" />
+              <operandOccurrenceSpecificationMoniker Id="bc8297c5-9a4f-4deb-ac82-ca6dc5dc56ee" LastKnownName="OperandOccurrenceSpecification3" />
+              <messageOccurrenceSpecificationMoniker Id="436aff00-710f-499d-b777-3f1bf8257028" LastKnownName="MessageOccurrenceSpecification13" />
+              <messageOccurrenceSpecificationMoniker Id="bab94b5f-f605-48f9-8643-c5d8830a1b6c" LastKnownName="MessageOccurrenceSpecification16" />
+              <messageOccurrenceSpecificationMoniker Id="ed101a6e-f92a-4de7-9ab3-6768875f028a" LastKnownName="MessageOccurrenceSpecification17" />
+              <messageOccurrenceSpecificationMoniker Id="e246558d-ed00-4f73-86c5-b59dd49d5d6c" LastKnownName="MessageOccurrenceSpecification20" />
+              <operandOccurrenceSpecificationMoniker Id="d39da2c5-2adf-4fa2-936e-82134cbb41c6" LastKnownName="OperandOccurrenceSpecification4" />
+              <operandOccurrenceSpecificationMoniker Id="d01d5475-847a-43b3-b1fe-1bd909889a42" LastKnownName="OperandOccurrenceSpecification7" />
+              <operandOccurrenceSpecificationMoniker Id="22aa16d7-7a76-411c-98c4-6f174655c4a2" LastKnownName="OperandOccurrenceSpecification8" />
+              <messageOccurrenceSpecificationMoniker Id="c8d6faad-4ed1-4ae2-b6a9-f6e7c8cb6492" LastKnownName="MessageOccurrenceSpecification37" />
+              <messageOccurrenceSpecificationMoniker Id="553c503a-b5eb-47d6-b573-55cc5170fe38" LastKnownName="MessageOccurrenceSpecification40" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="c170d889-d00b-4363-971a-4f37b9e80d16" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="b53fceab-5285-4533-aa55-37d5ed3fa6ca" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e5d0bedb-a153-4bd6-9313-494e42281d11" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="55d9ef6a-7f67-4d82-a821-520dd3e4efc9" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="353f1287-c72d-49b3-9cba-afdadf56c0fe" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="21eb17d2-4441-41d2-8b5a-baff4fb77509" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="70a98837-88df-4e61-88ed-73d4278985b8" />
+            <covered>
+              <lifelineMoniker Id="b9fee4a6-fa35-49d2-b134-5ff2a6d98ab9" LastKnownName="Kunde" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="a44ef0e9-35b1-4345-9526-0eadf878147a" name="CombinedFragment1" interactionOperator="Alt">
+            <elementDefinition Id="bf7af7f7-2fe6-490b-9ebd-d5693e61bb93" />
+            <coveredLifelines>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="72af829a-a6b2-4504-bd6e-327c3ba4a455" name="InteractionOperand1">
+                <elementDefinition Id="4105c2ad-c59b-4cb6-9622-3cb6f9a998ba" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+                  <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+                  <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+                  <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+                  <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="ee161ca6-756f-4f23-aaa3-f9baeb9b312e" guardText="If MedSejltur() = true">
+                    <elementDefinition Id="989dacaa-bffd-42ce-8a3d-2e4af463a561" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="71927f42-7bcc-4337-aeb1-134d72794e9f" LastKnownName="OperandOccurrenceSpecification1" />
+                  <operandOccurrenceSpecificationMoniker Id="fa2643c8-9121-4e5f-8a49-73a2c71042aa" LastKnownName="OperandOccurrenceSpecification2" />
+                  <operandOccurrenceSpecificationMoniker Id="bc8297c5-9a4f-4deb-ac82-ca6dc5dc56ee" LastKnownName="OperandOccurrenceSpecification3" />
+                  <operandOccurrenceSpecificationMoniker Id="d39da2c5-2adf-4fa2-936e-82134cbb41c6" LastKnownName="OperandOccurrenceSpecification4" />
+                  <operandOccurrenceSpecificationMoniker Id="bc151a8a-244c-4487-911f-47a9a691d016" LastKnownName="OperandOccurrenceSpecification9" />
+                  <operandOccurrenceSpecificationMoniker Id="63502864-7efd-434b-86a7-7badcdac98d6" LastKnownName="OperandOccurrenceSpecification10" />
+                  <operandOccurrenceSpecificationMoniker Id="a48665ba-409f-473e-9441-4d2e32ab66aa" LastKnownName="OperandOccurrenceSpecification13" />
+                  <operandOccurrenceSpecificationMoniker Id="de896402-6762-4f60-8dd2-0d48d1199fc7" LastKnownName="OperandOccurrenceSpecification14" />
+                  <operandOccurrenceSpecificationMoniker Id="0ac9cd9c-c198-4c19-95ee-ad873ab54b3d" LastKnownName="OperandOccurrenceSpecification21" />
+                  <operandOccurrenceSpecificationMoniker Id="725349db-e86d-446a-b7b7-fb8d6a0bc67d" LastKnownName="OperandOccurrenceSpecification22" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand Id="5e498c71-2cb7-4baf-92ea-077001bb3526" name="InteractionOperand2">
+                <elementDefinition Id="ef0d0f26-da62-4749-8f3b-fe11346b40d0" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+                  <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+                  <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+                  <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+                  <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="31e25861-06f5-4654-84c5-68bfa3291338">
+                    <elementDefinition Id="5bb5d99a-80eb-403c-8986-de7b9cb6d919" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="59dbb677-e829-4eb6-aa97-da4d390e485a" LastKnownName="OperandOccurrenceSpecification5" />
+                  <operandOccurrenceSpecificationMoniker Id="e396708f-06b7-4d02-8621-0659fc0d7681" LastKnownName="OperandOccurrenceSpecification6" />
+                  <operandOccurrenceSpecificationMoniker Id="d01d5475-847a-43b3-b1fe-1bd909889a42" LastKnownName="OperandOccurrenceSpecification7" />
+                  <operandOccurrenceSpecificationMoniker Id="22aa16d7-7a76-411c-98c4-6f174655c4a2" LastKnownName="OperandOccurrenceSpecification8" />
+                  <operandOccurrenceSpecificationMoniker Id="f6e8af07-abe3-40cb-9067-d5395550989c" LastKnownName="OperandOccurrenceSpecification11" />
+                  <operandOccurrenceSpecificationMoniker Id="76c09035-0ce8-4bed-9e46-47a22a5db913" LastKnownName="OperandOccurrenceSpecification12" />
+                  <operandOccurrenceSpecificationMoniker Id="2732a8cd-aa19-4f6a-8bea-ad6239629ae2" LastKnownName="OperandOccurrenceSpecification15" />
+                  <operandOccurrenceSpecificationMoniker Id="80f2041d-11dc-4ba5-b375-49f20970a45f" LastKnownName="OperandOccurrenceSpecification16" />
+                  <operandOccurrenceSpecificationMoniker Id="f4db2f2f-b10c-46cd-bb9e-d644d7f91bae" LastKnownName="OperandOccurrenceSpecification23" />
+                  <operandOccurrenceSpecificationMoniker Id="4adc4aca-a6cd-4305-953b-688f99d2801f" LastKnownName="OperandOccurrenceSpecification24" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="a48665ba-409f-473e-9441-4d2e32ab66aa" name="OperandOccurrenceSpecification13">
+            <elementDefinition Id="9380c28c-14bf-47b0-aaed-43b593a4c30f" />
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bc151a8a-244c-4487-911f-47a9a691d016" name="OperandOccurrenceSpecification9">
+            <elementDefinition Id="b0fbd851-ecbc-4ffa-afc6-feeb5e3b5920" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0ac9cd9c-c198-4c19-95ee-ad873ab54b3d" name="OperandOccurrenceSpecification21">
+            <elementDefinition Id="2546b275-d199-4d2b-b462-30c8c0347d6d" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="71927f42-7bcc-4337-aeb1-134d72794e9f" name="OperandOccurrenceSpecification1">
+            <elementDefinition Id="d09401c8-1657-447c-ac17-f67110a29f44" />
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bc8297c5-9a4f-4deb-ac82-ca6dc5dc56ee" name="OperandOccurrenceSpecification3">
+            <elementDefinition Id="44ca09bd-10b8-458d-b29f-284157a8471a" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1354474d-3302-499b-a3ed-fec0be4ee821" name="BehaviorExecutionSpecification6">
+            <elementDefinition Id="b7b86f32-fca7-4ba8-a7f4-47a93ec09e0b" />
+            <coveredLifelines>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="db483f1c-f11c-4e44-b65c-7be64f931101" LastKnownName="ExecutionOccurrenceSpecification12" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="6aa55331-19c6-43e4-8de8-26879c1a6056" LastKnownName="ExecutionOccurrenceSpecification11" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="8dd8eaef-26ef-49b4-b0c8-d1b000adfad6" LastKnownName="MessageOccurrenceSpecification14" />
+              <messageOccurrenceSpecificationMoniker Id="1baa7f8c-0022-4e0d-834d-fe4507d234f6" LastKnownName="MessageOccurrenceSpecification15" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="6aa55331-19c6-43e4-8de8-26879c1a6056" name="ExecutionOccurrenceSpecification11">
+            <elementDefinition Id="2ff66f07-71aa-4c62-84ed-943161787284" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4db4af57-0035-4a81-a106-5b177a3468b9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="436aff00-710f-499d-b777-3f1bf8257028" name="MessageOccurrenceSpecification13">
+            <elementDefinition Id="f348691b-279a-4876-b04a-8e8b6cbf5471" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8dd8eaef-26ef-49b4-b0c8-d1b000adfad6" name="MessageOccurrenceSpecification14">
+            <elementDefinition Id="7955b82a-6d00-4943-a152-e55595872fbc" />
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1baa7f8c-0022-4e0d-834d-fe4507d234f6" name="MessageOccurrenceSpecification15">
+            <elementDefinition Id="11b1e70e-d61b-4397-a1e6-7168614763c1" />
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bab94b5f-f605-48f9-8643-c5d8830a1b6c" name="MessageOccurrenceSpecification16">
+            <elementDefinition Id="fdb486d3-4cf0-458e-b7ed-02c8a329f440" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="db483f1c-f11c-4e44-b65c-7be64f931101" name="ExecutionOccurrenceSpecification12">
+            <elementDefinition Id="a81dceba-1e9f-4341-9ad8-fca455827df1" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="18ae025b-1a0f-461c-89ae-d5e723c406e5" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="077c0b63-9bf5-4f7a-acdc-69e160760b26" name="BehaviorExecutionSpecification7">
+            <elementDefinition Id="9d668335-e9e8-42d4-ad22-25783f2ba286" />
+            <coveredLifelines>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="3c1c4971-2e75-49eb-a67b-764e0455f452" LastKnownName="ExecutionOccurrenceSpecification14" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="6aa57e3b-ad85-45e0-87ae-f6a59a71ea1e" LastKnownName="ExecutionOccurrenceSpecification13" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="32537129-e6bf-4e3b-90ae-4e1056c9ff04" LastKnownName="MessageOccurrenceSpecification18" />
+              <messageOccurrenceSpecificationMoniker Id="7778dae4-e5d7-4ca9-9266-ee04987e8e77" LastKnownName="MessageOccurrenceSpecification25" />
+              <messageOccurrenceSpecificationMoniker Id="a1d85837-eac2-41f8-84c6-324be06adf08" LastKnownName="MessageOccurrenceSpecification28" />
+              <messageOccurrenceSpecificationMoniker Id="26a8d2aa-45e9-4e7c-85ac-1fbb130deded" LastKnownName="MessageOccurrenceSpecification33" />
+              <messageOccurrenceSpecificationMoniker Id="073cee77-eb8f-4a56-af18-c510a1a64c20" LastKnownName="MessageOccurrenceSpecification36" />
+              <messageOccurrenceSpecificationMoniker Id="2297f9af-cc84-4bcf-a49f-d38f501da27b" LastKnownName="MessageOccurrenceSpecification19" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="6aa57e3b-ad85-45e0-87ae-f6a59a71ea1e" name="ExecutionOccurrenceSpecification13">
+            <elementDefinition Id="e0621396-6621-4654-b1b9-d2d8ef9a3035" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="88a61ce9-4e3d-4ad6-9f55-9074a0c678df" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="32537129-e6bf-4e3b-90ae-4e1056c9ff04" name="MessageOccurrenceSpecification18">
+            <elementDefinition Id="372a7148-1c5e-4504-8ca8-d644287bf4cb" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ed101a6e-f92a-4de7-9ab3-6768875f028a" name="MessageOccurrenceSpecification17">
+            <elementDefinition Id="102d6893-be92-4a02-8b99-d43eac029578" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="c521d272-c68f-42c8-83c9-8bc203614592" name="BehaviorExecutionSpecification9">
+            <elementDefinition Id="b0255ffd-fc96-488e-9710-c9063f684f42" />
+            <coveredLifelines>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="752d2b0d-71f6-4192-b96e-5b7ae8d8e2ac" LastKnownName="ExecutionOccurrenceSpecification18" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="a9236caa-b40e-40a2-b4a9-f7a74972f269" LastKnownName="ExecutionOccurrenceSpecification17" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="0e6eb8f0-28d3-4f65-a11b-58b2736fc1c6" LastKnownName="MessageOccurrenceSpecification26" />
+              <messageOccurrenceSpecificationMoniker Id="7df4c085-b9cc-4d98-9858-1c6d497e26a3" LastKnownName="MessageOccurrenceSpecification27" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="a9236caa-b40e-40a2-b4a9-f7a74972f269" name="ExecutionOccurrenceSpecification17">
+            <elementDefinition Id="db9b75ef-e96c-4ec5-bddb-5c2829678817" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c622b58f-0c33-498b-85f9-a2664cb69f03" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0e6eb8f0-28d3-4f65-a11b-58b2736fc1c6" name="MessageOccurrenceSpecification26">
+            <elementDefinition Id="a450b8d5-9c68-4d1f-a6a0-1c113a04b78f" />
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7778dae4-e5d7-4ca9-9266-ee04987e8e77" name="MessageOccurrenceSpecification25">
+            <elementDefinition Id="b0c0d933-6d1b-43df-929a-cb62b047c8ad" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7df4c085-b9cc-4d98-9858-1c6d497e26a3" name="MessageOccurrenceSpecification27">
+            <elementDefinition Id="c19077a5-f74e-4b0c-a235-8c883174ba97" />
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a1d85837-eac2-41f8-84c6-324be06adf08" name="MessageOccurrenceSpecification28">
+            <elementDefinition Id="5711e5ba-9f9b-4910-8678-9dc9c5cfa981" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="752d2b0d-71f6-4192-b96e-5b7ae8d8e2ac" name="ExecutionOccurrenceSpecification18">
+            <elementDefinition Id="000cd78d-9494-405c-b5a4-66f8761fd7f8" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5354c3a2-e61a-4a32-9e52-a5a7d298fb6a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="e622eadf-6f37-4575-b64a-a7a71934a0a8" name="BehaviorExecutionSpecification11">
+            <elementDefinition Id="6b5f6191-e683-41a8-bad7-7d44797f453f" />
+            <coveredLifelines>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="14620372-2a82-41c0-875c-bdd472314247" LastKnownName="ExecutionOccurrenceSpecification22" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="0c3b949b-d70a-42fc-9613-eb9a70396e5f" LastKnownName="ExecutionOccurrenceSpecification21" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="aa9365a1-f6ba-435b-a2a1-3bd20059280c" LastKnownName="MessageOccurrenceSpecification34" />
+              <messageOccurrenceSpecificationMoniker Id="188f9618-57bf-411b-9751-f6e09ef793cc" LastKnownName="MessageOccurrenceSpecification35" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="0c3b949b-d70a-42fc-9613-eb9a70396e5f" name="ExecutionOccurrenceSpecification21">
+            <elementDefinition Id="b87d40ca-2735-4d2f-9650-bd98de7feba3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e94ba0b9-44c5-438a-98e9-3859432c53e8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="aa9365a1-f6ba-435b-a2a1-3bd20059280c" name="MessageOccurrenceSpecification34">
+            <elementDefinition Id="9d1dd00e-e5c2-4e1a-b990-d7e8acc2bf90" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="26a8d2aa-45e9-4e7c-85ac-1fbb130deded" name="MessageOccurrenceSpecification33">
+            <elementDefinition Id="b00866c1-252c-4cb7-8d67-919a5926d4b1" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="073cee77-eb8f-4a56-af18-c510a1a64c20" name="MessageOccurrenceSpecification36">
+            <elementDefinition Id="4fffe2fe-13f8-4822-a7ff-45d100d2c097" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="188f9618-57bf-411b-9751-f6e09ef793cc" name="MessageOccurrenceSpecification35">
+            <elementDefinition Id="64cdaf6a-36ba-40db-925b-9e367db27d13" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="14620372-2a82-41c0-875c-bdd472314247" name="ExecutionOccurrenceSpecification22">
+            <elementDefinition Id="1c683e5d-9ee5-4ab2-af87-c5292fedb5ba" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ef68b2ff-9bff-42fe-825b-4ab7191733c8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e246558d-ed00-4f73-86c5-b59dd49d5d6c" name="MessageOccurrenceSpecification20">
+            <elementDefinition Id="bfd721a7-8f7e-4d47-83ed-87cd568482af" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2297f9af-cc84-4bcf-a49f-d38f501da27b" name="MessageOccurrenceSpecification19">
+            <elementDefinition Id="50bcaf2b-f010-481e-8c13-116f55ca95a1" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="3c1c4971-2e75-49eb-a67b-764e0455f452" name="ExecutionOccurrenceSpecification14">
+            <elementDefinition Id="4c7b2934-aa34-48f2-8145-f5ee9dcbcb21" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3dc5d960-e78b-4d93-bc07-e6afbe376e2b" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="fa2643c8-9121-4e5f-8a49-73a2c71042aa" name="OperandOccurrenceSpecification2">
+            <elementDefinition Id="ff104583-74aa-45be-82ac-5fec9e53f0ac" />
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="725349db-e86d-446a-b7b7-fb8d6a0bc67d" name="OperandOccurrenceSpecification22">
+            <elementDefinition Id="5529efc6-1060-4de5-8685-666db38969db" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="de896402-6762-4f60-8dd2-0d48d1199fc7" name="OperandOccurrenceSpecification14">
+            <elementDefinition Id="3aab76e0-854e-4f24-b657-b32f65e0a73a" />
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d39da2c5-2adf-4fa2-936e-82134cbb41c6" name="OperandOccurrenceSpecification4">
+            <elementDefinition Id="68475f57-05e9-40c5-8c81-6f1a13fde585" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="63502864-7efd-434b-86a7-7badcdac98d6" name="OperandOccurrenceSpecification10">
+            <elementDefinition Id="8e6bf2a9-fd51-43fd-aa7b-911bd74febbe" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2732a8cd-aa19-4f6a-8bea-ad6239629ae2" name="OperandOccurrenceSpecification15">
+            <elementDefinition Id="becf7244-933c-49d4-98b5-0e9f35e2ecca" />
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f6e8af07-abe3-40cb-9067-d5395550989c" name="OperandOccurrenceSpecification11">
+            <elementDefinition Id="94896cd7-0d5a-4b07-887b-0c596ef1f8fd" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f4db2f2f-b10c-46cd-bb9e-d644d7f91bae" name="OperandOccurrenceSpecification23">
+            <elementDefinition Id="00566d1b-9714-4e07-8d11-a8d29562d91e" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="59dbb677-e829-4eb6-aa97-da4d390e485a" name="OperandOccurrenceSpecification5">
+            <elementDefinition Id="55890651-e63c-4269-becd-4a3e43e2511a" />
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d01d5475-847a-43b3-b1fe-1bd909889a42" name="OperandOccurrenceSpecification7">
+            <elementDefinition Id="4e7ff4a5-113e-40af-9109-b2047512437b" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="80f2041d-11dc-4ba5-b375-49f20970a45f" name="OperandOccurrenceSpecification16">
+            <elementDefinition Id="cc4de121-56dc-405d-a7df-21bf1a22e8bd" />
+            <covered>
+              <lifelineMoniker Id="f892975a-22d4-4891-9144-d8d1a10f0454" LastKnownName="Booking" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="76c09035-0ce8-4bed-9e46-47a22a5db913" name="OperandOccurrenceSpecification12">
+            <elementDefinition Id="d22981ee-afb3-424c-abf5-f181a5a50dac" />
+            <covered>
+              <lifelineMoniker Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" LastKnownName="Bookinghandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="22aa16d7-7a76-411c-98c4-6f174655c4a2" name="OperandOccurrenceSpecification8">
+            <elementDefinition Id="95b00633-b42b-401a-a42b-092bf0bfec4c" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="4adc4aca-a6cd-4305-953b-688f99d2801f" name="OperandOccurrenceSpecification24">
+            <elementDefinition Id="befe0815-6a56-4f44-a82b-8e2b31e4f386" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e396708f-06b7-4d02-8621-0659fc0d7681" name="OperandOccurrenceSpecification6">
+            <elementDefinition Id="749f1edb-0526-4d66-9478-4a09fd464f43" />
+            <covered>
+              <lifelineMoniker Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" LastKnownName=": Vikingeskib" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="f11a907a-1ed5-431d-9e2f-e1182ac11feb" name="BehaviorExecutionSpecification12">
+            <elementDefinition Id="38e461eb-e010-4ba5-9b15-f8461aa4df98" />
+            <coveredLifelines>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="380300a8-5618-4744-a865-2c3c72704b48" LastKnownName="ExecutionOccurrenceSpecification24" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="349339c7-1184-412e-a6d3-4577f1b5fb03" LastKnownName="ExecutionOccurrenceSpecification23" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="6720cf13-7288-4d1a-a5cb-731fd122e49e" LastKnownName="MessageOccurrenceSpecification38" />
+              <messageOccurrenceSpecificationMoniker Id="522bdd07-8954-4a5d-96a7-1c66bd2b05ad" LastKnownName="MessageOccurrenceSpecification39" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="349339c7-1184-412e-a6d3-4577f1b5fb03" name="ExecutionOccurrenceSpecification23">
+            <elementDefinition Id="f081837d-4857-4cac-9d95-6c60eefcda8a" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="84a15d80-625c-4657-8e1d-60ab862f79d0" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c8d6faad-4ed1-4ae2-b6a9-f6e7c8cb6492" name="MessageOccurrenceSpecification37">
+            <elementDefinition Id="3be46f6f-7190-44ef-87f5-cb0b5dbfb160" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6720cf13-7288-4d1a-a5cb-731fd122e49e" name="MessageOccurrenceSpecification38">
+            <elementDefinition Id="d7456700-045f-45fd-968e-3c8cee1c1ccb" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="522bdd07-8954-4a5d-96a7-1c66bd2b05ad" name="MessageOccurrenceSpecification39">
+            <elementDefinition Id="0577aef7-b113-4960-ae2b-82b6fea022c5" />
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="553c503a-b5eb-47d6-b573-55cc5170fe38" name="MessageOccurrenceSpecification40">
+            <elementDefinition Id="6b48c7d1-8a1c-41ee-a556-21a24464eafb" />
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="380300a8-5618-4744-a865-2c3c72704b48" name="ExecutionOccurrenceSpecification24">
+            <elementDefinition Id="b9290e5b-c353-4e1f-98c7-34bb216b8d5c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="743ac96b-3f89-47d3-bd40-b47219095f90" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="4abb0bcd-b361-4a2a-beac-946cb569d281" LastKnownName="Billet" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="7814bee1-80d8-408a-982e-1b6898672d7c" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="cc8f3f76-26f9-42bb-a077-e03f3056c833" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b463dc50-1d50-4d78-99df-f79d3fa93e81" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f565756-47f8-4944-b573-395436a1dfd0" LastKnownName=": Billethandler" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="b9fee4a6-fa35-49d2-b134-5ff2a6d98ab9" name="Kunde" isActor="false" lifelineDisplayName="Kunde">
+            <elementDefinition Id="33affbb3-ce29-462d-8e91-dbebed970fa1" />
+            <represents>
+              <propertyMoniker Id="555cb58e-9d32-499b-a2e4-2dae3164a2a9" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="21eb17d2-4441-41d2-8b5a-baff4fb77509" LastKnownName="MessageOccurrenceSpecification1" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="8f565756-47f8-4944-b573-395436a1dfd0" name=": Billethandler" isActor="false" lifelineDisplayName=": Billethandler">
+            <elementDefinition Id="1471a3a6-f637-4dc2-acc7-8608de0e7a24" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="c170d889-d00b-4363-971a-4f37b9e80d16" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="7814bee1-80d8-408a-982e-1b6898672d7c" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="44e03e93-7771-4e4a-a5fe-a7e26f201562" name=": Vikingeskib" isActor="false" lifelineDisplayName=": Vikingeskib">
+            <elementDefinition Id="03378595-887d-4c9a-b0e8-244b1d685fae" />
+            <represents>
+              <propertyMoniker Id="eed94b1a-2fbb-4569-87e4-70be6a7f5fdc" />
+            </represents>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="71927f42-7bcc-4337-aeb1-134d72794e9f" LastKnownName="OperandOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="6aa55331-19c6-43e4-8de8-26879c1a6056" LastKnownName="ExecutionOccurrenceSpecification11" />
+              <executionOccurrenceSpecificationMoniker Id="db483f1c-f11c-4e44-b65c-7be64f931101" LastKnownName="ExecutionOccurrenceSpecification12" />
+              <operandOccurrenceSpecificationMoniker Id="fa2643c8-9121-4e5f-8a49-73a2c71042aa" LastKnownName="OperandOccurrenceSpecification2" />
+              <operandOccurrenceSpecificationMoniker Id="59dbb677-e829-4eb6-aa97-da4d390e485a" LastKnownName="OperandOccurrenceSpecification5" />
+              <operandOccurrenceSpecificationMoniker Id="e396708f-06b7-4d02-8621-0659fc0d7681" LastKnownName="OperandOccurrenceSpecification6" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="bd0b46a9-ab62-421a-ae55-e220b3380c28" name="Bookinghandler" isActor="false" lifelineDisplayName="Bookinghandler">
+            <elementDefinition Id="b4b12dc9-e013-4afb-a646-c47328600aa1" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="bc151a8a-244c-4487-911f-47a9a691d016" LastKnownName="OperandOccurrenceSpecification9" />
+              <executionOccurrenceSpecificationMoniker Id="6aa57e3b-ad85-45e0-87ae-f6a59a71ea1e" LastKnownName="ExecutionOccurrenceSpecification13" />
+              <executionOccurrenceSpecificationMoniker Id="3c1c4971-2e75-49eb-a67b-764e0455f452" LastKnownName="ExecutionOccurrenceSpecification14" />
+              <operandOccurrenceSpecificationMoniker Id="63502864-7efd-434b-86a7-7badcdac98d6" LastKnownName="OperandOccurrenceSpecification10" />
+              <operandOccurrenceSpecificationMoniker Id="f6e8af07-abe3-40cb-9067-d5395550989c" LastKnownName="OperandOccurrenceSpecification11" />
+              <operandOccurrenceSpecificationMoniker Id="76c09035-0ce8-4bed-9e46-47a22a5db913" LastKnownName="OperandOccurrenceSpecification12" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="f892975a-22d4-4891-9144-d8d1a10f0454" name="Booking" isActor="false" lifelineDisplayName="Booking">
+            <elementDefinition Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97" />
+            <represents>
+              <propertyMoniker Id="bd39b48b-fa95-425f-9483-a2442673d801" />
+            </represents>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="a48665ba-409f-473e-9441-4d2e32ab66aa" LastKnownName="OperandOccurrenceSpecification13" />
+              <executionOccurrenceSpecificationMoniker Id="a9236caa-b40e-40a2-b4a9-f7a74972f269" LastKnownName="ExecutionOccurrenceSpecification17" />
+              <executionOccurrenceSpecificationMoniker Id="752d2b0d-71f6-4192-b96e-5b7ae8d8e2ac" LastKnownName="ExecutionOccurrenceSpecification18" />
+              <operandOccurrenceSpecificationMoniker Id="de896402-6762-4f60-8dd2-0d48d1199fc7" LastKnownName="OperandOccurrenceSpecification14" />
+              <operandOccurrenceSpecificationMoniker Id="2732a8cd-aa19-4f6a-8bea-ad6239629ae2" LastKnownName="OperandOccurrenceSpecification15" />
+              <operandOccurrenceSpecificationMoniker Id="80f2041d-11dc-4ba5-b375-49f20970a45f" LastKnownName="OperandOccurrenceSpecification16" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="4abb0bcd-b361-4a2a-beac-946cb569d281" name="Billet" isActor="false" lifelineDisplayName="Billet">
+            <elementDefinition Id="99961958-3df6-4b35-a8c8-61dc0752e4f3" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="0ac9cd9c-c198-4c19-95ee-ad873ab54b3d" LastKnownName="OperandOccurrenceSpecification21" />
+              <executionOccurrenceSpecificationMoniker Id="0c3b949b-d70a-42fc-9613-eb9a70396e5f" LastKnownName="ExecutionOccurrenceSpecification21" />
+              <executionOccurrenceSpecificationMoniker Id="14620372-2a82-41c0-875c-bdd472314247" LastKnownName="ExecutionOccurrenceSpecification22" />
+              <operandOccurrenceSpecificationMoniker Id="725349db-e86d-446a-b7b7-fb8d6a0bc67d" LastKnownName="OperandOccurrenceSpecification22" />
+              <operandOccurrenceSpecificationMoniker Id="f4db2f2f-b10c-46cd-bb9e-d644d7f91bae" LastKnownName="OperandOccurrenceSpecification23" />
+              <operandOccurrenceSpecificationMoniker Id="4adc4aca-a6cd-4305-953b-688f99d2801f" LastKnownName="OperandOccurrenceSpecification24" />
+              <executionOccurrenceSpecificationMoniker Id="349339c7-1184-412e-a6d3-4577f1b5fb03" LastKnownName="ExecutionOccurrenceSpecification23" />
+              <executionOccurrenceSpecificationMoniker Id="380300a8-5618-4744-a865-2c3c72704b48" LastKnownName="ExecutionOccurrenceSpecification24" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="db87f49c-0cd9-4f2d-9ed2-c72161212486" name="Angive oplysninger (med sejltur, tudspunkt)" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="6a1857d7-7367-4636-95e3-21fa0daf1310" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="21eb17d2-4441-41d2-8b5a-baff4fb77509" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="55d9ef6a-7f67-4d82-a821-520dd3e4efc9" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="855752ea-4bc7-4f76-9661-d42f15c2e8cc" name="Med sejltur" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="55a1ca90-f248-4c34-a510-f1e5fd7e332c" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="436aff00-710f-499d-b777-3f1bf8257028" LastKnownName="MessageOccurrenceSpecification13" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8dd8eaef-26ef-49b4-b0c8-d1b000adfad6" LastKnownName="MessageOccurrenceSpecification14" />
+            </receiveEvent>
+          </message>
+          <message Id="f8cf444d-d0ae-4743-9e3e-1eac68d4da2e" name="MedSejltur()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="edb837b4-5b9f-4532-9b69-0f51d45b9516" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="1baa7f8c-0022-4e0d-834d-fe4507d234f6" LastKnownName="MessageOccurrenceSpecification15" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="bab94b5f-f605-48f9-8643-c5d8830a1b6c" LastKnownName="MessageOccurrenceSpecification16" />
+            </receiveEvent>
+          </message>
+          <message Id="b5daf0b8-317a-4964-87ef-7d53f6c392cc" name="CheckPlads()" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="50d63e7f-884d-4654-83b6-aeb096ba0d1a" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="ed101a6e-f92a-4de7-9ab3-6768875f028a" LastKnownName="MessageOccurrenceSpecification17" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="32537129-e6bf-4e3b-90ae-4e1056c9ff04" LastKnownName="MessageOccurrenceSpecification18" />
+            </receiveEvent>
+          </message>
+          <message Id="329d3265-f413-4afe-9ef6-a3c8d611467a" name="&lt;&lt;create booking&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="c8339473-7ac2-4756-a561-2fcba36a72e6" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7778dae4-e5d7-4ca9-9266-ee04987e8e77" LastKnownName="MessageOccurrenceSpecification25" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="0e6eb8f0-28d3-4f65-a11b-58b2736fc1c6" LastKnownName="MessageOccurrenceSpecification26" />
+            </receiveEvent>
+          </message>
+          <message Id="a66d8c6a-eeb8-42bf-921b-bfe7b1508aa0" name="&lt;&lt;return booking&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="470c44e1-97c9-4305-8412-006c5a1ae44e" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7df4c085-b9cc-4d98-9858-1c6d497e26a3" LastKnownName="MessageOccurrenceSpecification27" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="a1d85837-eac2-41f8-84c6-324be06adf08" LastKnownName="MessageOccurrenceSpecification28" />
+            </receiveEvent>
+          </message>
+          <message Id="0a6a2e0d-4bb8-44ff-92b5-4d7a007f2d4e" name="&lt;&lt;create billet&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="024b66d9-e5b3-48bc-934d-e745279176a7" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="26a8d2aa-45e9-4e7c-85ac-1fbb130deded" LastKnownName="MessageOccurrenceSpecification33" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="aa9365a1-f6ba-435b-a2a1-3bd20059280c" LastKnownName="MessageOccurrenceSpecification34" />
+            </receiveEvent>
+          </message>
+          <message Id="7a20a849-8b30-4820-aa59-4d70fe342195" name="&lt;&lt;return billet&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="a6be9b42-430c-4dcd-b4de-0a6e44281f33" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="188f9618-57bf-411b-9751-f6e09ef793cc" LastKnownName="MessageOccurrenceSpecification35" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="073cee77-eb8f-4a56-af18-c510a1a64c20" LastKnownName="MessageOccurrenceSpecification36" />
+            </receiveEvent>
+          </message>
+          <message Id="8891e659-8167-4435-8f02-c71885126c1d" name="true or false" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="54b4f637-0343-4016-bdfd-8d93f30fc299" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2297f9af-cc84-4bcf-a49f-d38f501da27b" LastKnownName="MessageOccurrenceSpecification19" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e246558d-ed00-4f73-86c5-b59dd49d5d6c" LastKnownName="MessageOccurrenceSpecification20" />
+            </receiveEvent>
+          </message>
+          <message Id="acc6b241-9081-4676-b055-bd39f461ad22" name="&lt;&lt;create billet&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="695db82c-d72b-4055-af56-bed94619188c" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="c8d6faad-4ed1-4ae2-b6a9-f6e7c8cb6492" LastKnownName="MessageOccurrenceSpecification37" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="6720cf13-7288-4d1a-a5cb-731fd122e49e" LastKnownName="MessageOccurrenceSpecification38" />
+            </receiveEvent>
+          </message>
+          <message Id="a35090da-c97d-48ab-bf07-959f291de901" name="&lt;&lt;return billet&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="5faf21f9-2c7b-4e36-8773-ff731ee92406" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="522bdd07-8954-4a5d-96a7-1c66bd2b05ad" LastKnownName="MessageOccurrenceSpecification39" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="553c503a-b5eb-47d6-b573-55cc5170fe38" LastKnownName="MessageOccurrenceSpecification40" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="555cb58e-9d32-499b-a2e4-2dae3164a2a9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6231a6e9-f48c-4b87-abd8-6d363792010f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ea63c9a0-de1f-4ace-9acf-353bed848fa1" LastKnownName="Kunde" />
+            </type_NamedElement>
+          </property>
+          <property Id="eed94b1a-2fbb-4569-87e4-70be6a7f5fdc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e96b83a9-dd14-49cf-bbf2-f97ccc4d8870" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="667b9ace-171a-43a6-a9f9-8fd594eb7a20" LastKnownName="Vikingeskib" />
+            </type_NamedElement>
+          </property>
+          <property Id="bd39b48b-fa95-425f-9483-a2442673d801" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f4ba008-3ba5-48c9-ac00-816040823e8a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="39dede2b-ae6f-485d-8057-9a3bdf184a05" LastKnownName="Booking" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ea63c9a0-de1f-4ace-9acf-353bed848fa1" name="Kunde" isAbstract="false" isLeaf="false" cachedFullName="VIKINGESKIBSMUSEETdomain::Kunde">
+        <elementDefinition Id="f62693a6-1cfc-4c2f-a41c-b5b65d37c21a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e5d0bedb-a153-4bd6-9313-494e42281d11" name="ExecutionEvent">
+        <elementDefinition Id="b7082cbc-dd5e-42d2-b119-fcfa84f7378a" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b463dc50-1d50-4d78-99df-f79d3fa93e81" name="ExecutionEvent">
+        <elementDefinition Id="475e0656-2536-48bb-8ea5-45a1655e6365" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="667b9ace-171a-43a6-a9f9-8fd594eb7a20" name="Vikingeskib" isAbstract="false" isLeaf="false" cachedFullName="VIKINGESKIBSMUSEETdomain::Vikingeskib">
+        <elementDefinition Id="4bbfb56d-38f3-4c7e-b9d3-f826781db974" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4db4af57-0035-4a81-a106-5b177a3468b9" name="ExecutionEvent">
+        <elementDefinition Id="e2e28bbf-1bb4-4360-8c35-0c3492caf0eb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="18ae025b-1a0f-461c-89ae-d5e723c406e5" name="ExecutionEvent">
+        <elementDefinition Id="0ebb8603-e4b9-4d94-a102-341ebeacd057" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="88a61ce9-4e3d-4ad6-9f55-9074a0c678df" name="ExecutionEvent">
+        <elementDefinition Id="be528313-5ca3-43f0-8952-758aed0611fd" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3dc5d960-e78b-4d93-bc07-e6afbe376e2b" name="ExecutionEvent">
+        <elementDefinition Id="8feb4f45-5a5c-4a5c-8972-d80d8851d674" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="39dede2b-ae6f-485d-8057-9a3bdf184a05" name="Booking" isAbstract="false" isLeaf="false" cachedFullName="VIKINGESKIBSMUSEETdomain::Booking">
+        <elementDefinition Id="e054c577-b611-4ba2-ba26-a0b56f19b382" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c622b58f-0c33-498b-85f9-a2664cb69f03" name="ExecutionEvent">
+        <elementDefinition Id="19d03eda-b16f-4cef-aa93-21031e3b34a3" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5354c3a2-e61a-4a32-9e52-a5a7d298fb6a" name="ExecutionEvent">
+        <elementDefinition Id="0a10fba3-c6bc-45f3-b039-f199c0113914" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e94ba0b9-44c5-438a-98e9-3859432c53e8" name="ExecutionEvent">
+        <elementDefinition Id="b38de300-a359-4ec2-83fe-fadd145830db" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ef68b2ff-9bff-42fe-825b-4ab7191733c8" name="ExecutionEvent">
+        <elementDefinition Id="1900e45e-8412-4a2d-84db-7107591d440e" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="84a15d80-625c-4657-8e1d-60ab862f79d0" name="ExecutionEvent">
+        <elementDefinition Id="d02e9c71-8a94-4b70-b673-511c92cad731" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="743ac96b-3f89-47d3-bd40-b47219095f90" name="ExecutionEvent">
+        <elementDefinition Id="e962d512-b660-4262-9714-e73f88027082" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="f282aafc-376b-4123-b3c1-ec4d406b43fd" name="VIKINGESKIBSMUSEETdomain">
+    <elementDefinition Id="40f873af-ff2b-4e31-ba85-b79369f181e3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9125023e-ea97-40bd-8fc9-1af49bd1a582">
+        <profileInstance Id="395d12ab-7254-4f38-96ec-ee7ddafca6fa" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d6e677cd-e7ee-4a63-aeab-daeef566fe40">
+        <profileInstance Id="ba9d6266-b338-46ca-9107-ad550689f0a7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>
