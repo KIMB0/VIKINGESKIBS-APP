@@ -14,7 +14,6 @@ namespace VIKINGEdesignWEB
         }
 
         public virtual DbSet<Billeter> Billeters { get; set; }
-        public virtual DbSet<Booking> Bookings { get; set; }
         public virtual DbSet<Kunder> Kunders { get; set; }
         public virtual DbSet<Priser> Prisers { get; set; }
         public virtual DbSet<VikingeSkibe> VikingeSkibes { get; set; }

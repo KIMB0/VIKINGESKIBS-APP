@@ -32,10 +32,4 @@ CREATE TABLE VikingeSkibe (
      AntalPladser   int   NOT NULL
 );
 
-CREATE TABLE Booking(
-     BookingID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	 KundeID  int   NOT NULL FOREIGN KEY REFERENCES Kunder(KundeID),
-     BilletID  int   NOT NULL FOREIGN KEY REFERENCES Billeter(BilletID)
-);
-
 GO

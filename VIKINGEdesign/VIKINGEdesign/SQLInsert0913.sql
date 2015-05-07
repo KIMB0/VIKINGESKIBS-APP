@@ -18,5 +18,3 @@ INSERT INTO VikingeSkibe VALUES ('Krákan',9);
 INSERT INTO VikingeSkibe VALUES ('Oselven',13);
 INSERT INTO VikingeSkibe VALUES ('Sunnfjord',13);
 INSERT INTO VikingeSkibe VALUES ('Trolle',9);
-
-INSERT INTO Booking VALUES (1,1);
