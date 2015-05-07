@@ -46,14 +46,22 @@
             <TextBox x:Name="EmailTextbox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,10,0,0" Width="90"/>
             <TextBox x:Name="TlfTextbox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,10,0,0" Width="90"/>
             <CheckBox x:Name="SejlturCheckbox" Content="Sejltur" VerticalAlignment="Stretch" Margin="0,12,0,0"/>
-            <Slider x:Name="AntalSlider" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0,6,0,0" Foreground="Black" Background="#29000000" Height="44" />
+            <Slider x:Name="AntalVoksne" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0,6,0,0" Foreground="Black" Background="#29000000" Height="44" />
+            <Slider x:Name="AntalBørn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0" Foreground="Black" Background="#29000000" Height="44" Orientation="Horizontal" />
+            <Slider x:Name="AntalStuderende" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0" Foreground="Black" Background="#29000000" Height="44" />
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="315" Margin="836,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="154">
             <TextBlock TextWrapping="Wrap" Text="Navn:" FontSize="26" Foreground="Black"/>
             <TextBlock TextWrapping="Wrap" Text="Email:" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
             <TextBlock TextWrapping="Wrap" Text="Tlf. nummer:" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
             <TextBlock TextWrapping="Wrap" Text="m./u. sejltur:" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
-            <TextBlock TextWrapping="Wrap" Text="Antal:" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Voksne:" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
+            <TextBlock TextWrapping="Wrap" FontSize="26" Foreground="Black" Margin="0,10,0,0">
+            	<Run Text="Børn"/>
+            	<Run Text=":"/>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" Text="Studerende:" FontSize="26" Foreground="Black" Margin="0,15,0,0"/>
+            <TextBlock TextWrapping="Wrap" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Margin="262,482,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Vælg dato:" VerticalAlignment="Top" Height="35" Width="124" FontSize="24" Foreground="Black"/>
         <Button Content="BESTIL" HorizontalAlignment="Left" Margin="963,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF1FDA16" Height="57" Width="145" BorderBrush="#FF1FDA16" Foreground="Black"/>
