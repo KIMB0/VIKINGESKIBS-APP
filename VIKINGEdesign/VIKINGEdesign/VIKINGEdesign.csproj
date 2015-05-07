@@ -139,6 +139,7 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\top.gif" />
     <Content Include="SQLCreate0913.sql" />
+    <Content Include="SQLInsert0913.sql" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
