@@ -158,7 +158,6 @@
     <Compile Include="Billeter.cs" />
     <Compile Include="Booking.cs" />
     <Compile Include="Controllers\BilletersController.cs" />
-    <Compile Include="Controllers\BookingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KundersController.cs" />
     <Compile Include="Controllers\PrisersController.cs" />
