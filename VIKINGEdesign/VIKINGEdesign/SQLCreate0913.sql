@@ -21,7 +21,7 @@ CREATE TABLE Billeter(
 );
 
 CREATE TABLE VikingeSkibe (
-     VikingeSkibeID  int  NOT NULL PRIMARY KEY,
+     VikingeSkibeID  int  NOT NULL PRIMARY KEY IDENTITY(1,1),
      Name      NvarChar(30)      NOT NULL,
      AntalPladser   int   NOT NULL
 );
