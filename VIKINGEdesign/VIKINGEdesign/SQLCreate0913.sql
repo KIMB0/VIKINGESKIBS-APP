@@ -10,13 +10,19 @@ CREATE TABLE Kunder(
 	 Telefon int NOT NULL
 );
 
+CREATE TABLE Priser(
+	 PrisID int NOT NULL PRIMARY KEY IDENTITY(1,1),
+	 Pris FLOAT NOT NULL
+);
+
 CREATE TABLE Billeter(
 	 BilletID int  NOT NULL PRIMARY KEY IDENTITY(1,1),
 	 KundeID int NOT NULL FOREIGN KEY REFERENCES Kunder(KundeID),
 	 AntalBorn   int    NOT NULL,
+	 AntalSuderende int NOT NULL,
      AntalVoksen  int    NOT NULL,
      Dato DATETIME NOT NULL,
-     Price     FLOAT NOT NULL,
+     Pris FLOAT NOT NULL,
 	 Sejltur bit
 );
 
