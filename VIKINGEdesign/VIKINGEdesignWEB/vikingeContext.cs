@@ -20,18 +20,8 @@ namespace VIKINGEdesignWEB
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Billeter>()
-                .HasMany(e => e.Bookings)
-                .WithRequired(e => e.Billeter)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<Kunder>()
                 .HasMany(e => e.Billeters)
-                .WithRequired(e => e.Kunder)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Kunder>()
-                .HasMany(e => e.Bookings)
                 .WithRequired(e => e.Kunder)
                 .WillCascadeOnDelete(false);
         }
