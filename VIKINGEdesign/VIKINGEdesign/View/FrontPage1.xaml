@@ -42,10 +42,10 @@
         <Image HorizontalAlignment="Left" Height="374" Margin="55,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="552" Source="ms-appx:///Assets/Skib2.png"/>
         <DatePicker x:Name="DatoDatepicker" HorizontalAlignment="Left" Margin="181,522,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <StackPanel HorizontalAlignment="Left" Height="306" Margin="1004,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="352">
-            <TextBox x:Name="NavnTextbox" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190"/>
-            <TextBox x:Name="EmailTextbox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,10,0,0" Width="190"/>
-            <TextBox x:Name="TlfTextbox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,10,0,0" Width="190"/>
-            <CheckBox x:Name="SejlturCheckbox" Content="" VerticalAlignment="Stretch" Margin="0,12,0,0" FontFamily=""/>
+            <TextBox x:Name="NavnTextbox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190"/>
+            <TextBox x:Name="EmailTextbox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" Width="190"/>
+            <TextBox x:Name="TlfTextbox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" Width="190"/>
+            <CheckBox x:Name="SejlturCheckbox" Content="" VerticalAlignment="Stretch" Margin="0,12,0,0"/>
             <Slider x:Name="AntalVoksne" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0,6,0,0" Foreground="Black" Background="#29000000" Height="44" />
             <Slider x:Name="AntalBørn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0" Foreground="Black" Background="#29000000" Height="44" Orientation="Horizontal" />
             <Slider x:Name="AntalStuderende" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Maximum="24" Margin="0" Foreground="Black" Background="#29000000" Height="44" />
