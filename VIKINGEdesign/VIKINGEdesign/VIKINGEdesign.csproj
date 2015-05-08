@@ -118,6 +118,7 @@
     <Compile Include="Model\Billet.cs" />
     <Compile Include="Model\Kunde.cs" />
     <Compile Include="Model\Vikingeskib.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="View\FrontPage1.xaml.cs">
       <DependentUpon>FrontPage1.xaml</DependentUpon>

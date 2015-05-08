@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using VIKINGEdesign.Annotations;
 
 namespace VIKINGEdesign.Model
 {
-    class Billet
+    class Billet : INotifyPropertyChanged
     {
         private int _billetId;
         private int _kundeId;
         private int _antalBorn;
+        private int _antalStuderende;
         private int _antalVoksne;
         private bool _sejltur;
         private DateTime _dateTime;
-        private int _pris;
+        private float _pris;
 
         public int Billet_id
         {
@@ -26,6 +30,12 @@ namespace VIKINGEdesign.Model
         {
             get { return _kundeId; }
             set { _kundeId = value; }
+        }
+
+        public int AntalStuderende
+        {
+            get { return _antalStuderende; }
+            set { _antalStuderende = value; }
         }
 
         public int AntalBorn
@@ -53,12 +63,25 @@ namespace VIKINGEdesign.Model
             set { _dateTime = value; }
         }
 
-        public int Pris
+        public float Pris
         {
             get { return _pris; }
             set { _pris = value; }
         }
-        
+
+        #region INotifyPropertyChanged
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        #endregion
+
     }
    
 }
