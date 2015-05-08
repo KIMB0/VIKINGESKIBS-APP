@@ -115,6 +115,9 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Model\Billet.cs" />
+    <Compile Include="Model\Kunde.cs" />
+    <Compile Include="Model\Vikingeskib.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="View\FrontPage1.xaml.cs">
       <DependentUpon>FrontPage1.xaml</DependentUpon>
@@ -147,9 +150,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll</HintPath>
