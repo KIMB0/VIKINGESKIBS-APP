@@ -14,10 +14,10 @@ namespace VIKINGEdesign.Persistency
         /// <summary>
         /// Poster evented til databasen.
         /// </summary>
-        /// <param name="newEvent"></param>
+        /// <param name="newBillet"></param>
         public static async void SaveBilleterAsJsonAsync(Billet newBillet)
         {
-            const string ServerUrl = "http://localhost:6833";
+            const string ServerUrl = "http://localhost:3541";
 
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;

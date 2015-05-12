@@ -75,7 +75,7 @@ namespace VIKINGEdesign.Model
             set { _dateTime = value; }
         }
 
-        public float Pris
+        public double Pris
         {
             get { return _pris; }
             set { _pris = value; }

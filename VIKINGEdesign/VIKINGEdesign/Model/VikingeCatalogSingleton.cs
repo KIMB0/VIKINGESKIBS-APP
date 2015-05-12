@@ -99,15 +99,5 @@ namespace VIKINGEdesign.Model
             Kunder.Add(newKunde);
             PersistencyService.SaveKunderAsJsonAsync(newKunde);
         }
-
-        ///// <summary>
-        ///// Sletter data i databasen.
-        ///// </summary>
-        ///// <param name="eventToBeRemoved">Det event der skal slettes.</param>
-        //public void Remove(Event eventToBeRemoved)
-        //{
-        //    Events.Remove(eventToBeRemoved);
-        //    PersistencyService.DeleteEventsAsJsonAsync(eventToBeRemoved.Id);
-        //}
     }
 }
