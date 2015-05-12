@@ -16,9 +16,21 @@ namespace VIKINGEdesign.Model
         private int _antalBorn;
         private int _antalStuderende;
         private int _antalVoksne;
-        private bool _sejltur;
         private DateTime _dateTime;
-        private float _pris;
+        private double _pris;
+        private bool _sejltur;
+
+        public Billet(int billetId, int kundeId, int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
+        {
+            _billetId = billetId;
+            _kundeId = kundeId;
+            _antalBorn = antalBorn;
+            _antalStuderende = antalStuderende;
+            _antalVoksne = antalVoksne;
+            _dateTime = dateTime;
+            _pris = pris;
+            _sejltur = sejltur;
+        }
 
         public int Billet_id
         {

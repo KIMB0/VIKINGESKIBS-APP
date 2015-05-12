@@ -9,9 +9,17 @@ namespace VIKINGEdesign.Model
     class Kunde
     {
         private int _kundeId;
-        private string _navn;
         private string _email;
-        private string _telefonNr;
+        private string _navn;
+        private int _telefonNr;
+
+        public Kunde(int kundeId, string email, string navn, int telefonNr)
+        {
+            _kundeId = kundeId;
+            _email = email;
+            _navn = navn;
+            _telefonNr = telefonNr;
+        }
 
         public int Kunde_id
         {
@@ -31,7 +39,7 @@ namespace VIKINGEdesign.Model
             set { _email = value; }
         }
 
-        public string TelefonNr
+        public int TelefonNr
         {
             get { return _telefonNr; }
             set { _telefonNr = value; }

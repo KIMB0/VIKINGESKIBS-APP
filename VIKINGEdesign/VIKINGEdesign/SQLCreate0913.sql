@@ -12,7 +12,7 @@ CREATE TABLE Kunder(
 
 CREATE TABLE Priser(
 	 PrisID int NOT NULL PRIMARY KEY IDENTITY(1,1),
-	 Pris FLOAT NOT NULL
+	 Pris money
 );
 
 CREATE TABLE Billeter(
@@ -22,7 +22,7 @@ CREATE TABLE Billeter(
 	 AntalSuderende int NOT NULL,
      AntalVoksen  int    NOT NULL,
      Dato DATETIME NOT NULL,
-     Pris FLOAT NOT NULL,
+     Pris money,
 	 Sejltur bit
 );
 
