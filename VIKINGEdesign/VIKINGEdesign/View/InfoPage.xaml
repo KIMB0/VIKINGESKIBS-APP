@@ -20,7 +20,13 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FFD8D8D8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="277*"/>
+            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="74*"/>
+        </Grid.ColumnDefinitions>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -30,21 +36,30 @@
             <RowDefinition Height="140"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <!-- Back button and page title -->
-        <Grid>
+        <Grid Grid.ColumnSpan="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        VerticalAlignment="Top"
-                        AutomationProperties.Name="Back"
-                        AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+            <Grid Background="#FF4F4D40" Margin="0,0,0,10" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image HorizontalAlignment="Left" Height="130" Margin="47,0,0,0" VerticalAlignment="Top" Width="572" Source="ms-appx:///Assets/top.gif" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" 
+        			IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="0,0,150,130" Text="Hej" Foreground="White"/>
+                <Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png"/>
+                <Button x:Name="backButton" Margin="47,52,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+        			Style="{StaticResource NavigationBackButtonNormalStyle}"
+        			VerticalAlignment="Top"
+        			AutomationProperties.Name="Back"
+        			AutomationProperties.AutomationId="BackButton"
+        			AutomationProperties.ItemType="Navigation Button"/>
+            </Grid>
         </Grid>
+        <ListBox HorizontalAlignment="Left" Height="538" Margin="60,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="390" Grid.ColumnSpan="2"/>
+
+        <!-- Back button and page title -->
     </Grid>
 </Page>

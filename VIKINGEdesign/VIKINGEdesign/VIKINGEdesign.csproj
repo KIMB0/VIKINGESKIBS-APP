@@ -141,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\body.gif" />
+    <Content Include="Assets\e50e6953c1.jpg" />
     <Content Include="Assets\facebook.png" />
     <Content Include="Assets\Facebook2.png" />
     <Content Include="Assets\Logo.gif" />
