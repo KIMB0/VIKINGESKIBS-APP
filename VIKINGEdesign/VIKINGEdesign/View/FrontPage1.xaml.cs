@@ -18,11 +18,15 @@ using Windows.UI.Xaml.Navigation;
 
 namespace VIKINGEdesign
 {
+
+
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
     public sealed partial class FrontPage1 : Page
     {
+        public CornerRadius CornerRadius { get; set; }
+
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
@@ -80,6 +84,8 @@ namespace VIKINGEdesign
         {
         }
 
+
+
         #region NavigationHelper registration
 
         /// The methods provided in this section are simply used to allow
@@ -101,6 +107,12 @@ namespace VIKINGEdesign
             navigationHelper.OnNavigatedFrom(e);
         }
 
+        private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+        }
+
         #endregion
     }
+
 }
