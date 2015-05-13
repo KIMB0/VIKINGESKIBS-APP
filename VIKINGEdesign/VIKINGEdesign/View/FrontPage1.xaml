@@ -65,7 +65,7 @@
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Margin="262,482,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Vælg dato:" VerticalAlignment="Top" Height="35" Width="124" FontSize="24" Foreground="Black"/>
         <Button Content="BESTIL" HorizontalAlignment="Left" Margin="963,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF1FDA16" Height="57" Width="145" BorderBrush="#FF1FDA16" Foreground="Black"/>
-        <Button Content="LÆS MERE" HorizontalAlignment="Left" Margin="1111,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FFFBB700" Height="57" Width="145" BorderBrush="#FFFBB700" Foreground="Black" PointerEntered="Button_PointerEntered"/>
+        <Button Content="LÆS MERE" HorizontalAlignment="Left" Margin="1111,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FFFBB700" Height="57" Width="145" BorderBrush="#FFFBB700" Foreground="Black" PointerEntered="Button_PointerEntered" Click="Button_Click"/>
 
         <!-- Back button and page title -->
     </Grid>
