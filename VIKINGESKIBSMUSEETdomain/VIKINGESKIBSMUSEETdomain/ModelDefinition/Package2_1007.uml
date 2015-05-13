@@ -22,7 +22,7 @@
             <classMoniker
               Id="506767e7-27bb-43fd-b814-5dd578f7ac92"
               LastKnownName="SingleTonViewModel"
-              LastKnownLocation="Package2_1007.uml" />
+              LastKnownLocation="Package_1008.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -75,72 +75,17 @@
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <class
-        Id="506767e7-27bb-43fd-b814-5dd578f7ac92"
-        name="SingleTonViewModel"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="ea55a7da-ac5f-4236-be03-0799cdb758bf"
-            isDerived="false"
-            sourceEndRoleName="SingleTonViewModel"
-            targetEndRoleName="Vikingeskib"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="b7c4f43f-3ed5-4e48-b576-bf6862b7afb0"
-              LastKnownName="Vikingeskib"
-              LastKnownLocation="Package_1008.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="fd6130c7-23ac-478b-ba4c-3c2f2f762d2a"
-                  name="SingleTonViewModel"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f83e1342-7c81-4bd2-bd2f-98ca167073ef"
-                  name="Vikingeskib"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="4d1904fe-7202-4bd2-89ef-6ca84c7a4321"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="9dc5cd59-ae3e-4990-88e1-5b236f0517c8"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <undefinedType
         Id="72a08d53-c927-489c-9491-e957b8309217"
         name="Instans" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d"
+        name="BilletHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

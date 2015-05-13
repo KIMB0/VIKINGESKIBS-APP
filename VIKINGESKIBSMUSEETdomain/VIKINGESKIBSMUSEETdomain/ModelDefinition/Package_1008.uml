@@ -13,17 +13,6 @@
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="46ab05c6-e656-47bb-b458-738bd2448220"
-            name="Instruktøre"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="c6d2b533-c0a7-41d3-8037-cf48ed27f82e"
             name="Navn"
             isLeaf="false"
@@ -47,7 +36,7 @@
             isComposite="false" />
           <property
             Id="67cdce2c-ea37-4890-a5c4-e40e051a99e8"
-            name="Skibs_Id"
+            name="SkibsId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -90,7 +79,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="05f45927-cacb-4989-839d-f2bb6b1aadaa"
+            Id="801e77a1-e38e-49fd-9311-037f07049ce6"
             isDerived="false"
             sourceEndRoleName="Kunde"
             targetEndRoleName="Billet"
@@ -103,20 +92,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="1192a8ac-ed80-4c0f-82d7-9a790d101420"
+                  Id="4e7af7dc-46d5-4ada-a9d3-3b6cc1285d9a"
                   name="Kunde"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="1ad78559-2b09-402d-aa4e-82b796b545d5"
+                  Id="324e9fbc-6ae8-47b4-8a20-7b7284d8db25"
                   name="Billet"
                   isLeaf="false"
                   isStatic="false"
@@ -124,16 +113,16 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="4e73a879-1ee1-45e6-854c-6a11c2fb9c4a"
+                      Id="08518b98-d114-4601-9911-eb6f6adde1d6"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="b004d07a-c212-437a-beb6-ddebb7cea1d4"
+                      Id="3108fe3a-c525-4ac2-8624-a427ecde5ea6"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -178,7 +167,7 @@
             isComposite="false" />
           <property
             Id="9d881e3c-dc5e-476a-aeb6-76a2058fd4f6"
-            name="Kunde_Id"
+            name="KundeId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -211,7 +200,7 @@
             isComposite="false" />
           <property
             Id="e46f231e-850a-461a-a881-2f05303c4383"
-            name="Dato"
+            name="DateTime"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -222,7 +211,7 @@
             isComposite="false" />
           <property
             Id="66a41655-757b-4b8a-8bd0-402effc9dc9f"
-            name="Antal"
+            name="AntalBorn"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -233,18 +222,7 @@
             isComposite="false" />
           <property
             Id="73542d0c-7e37-4a7f-ab4d-cf2a6a672846"
-            name="Type"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="26b42a1a-4d3d-4563-a0df-2580ab2a102a"
-            name="Årstid"
+            name="Sejltur"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -255,7 +233,7 @@
             isComposite="false" />
           <property
             Id="ea74979f-a01a-4d1f-9e76-c8aa76adb2db"
-            name="Kunde_id"
+            name="KundeId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -266,7 +244,29 @@
             isComposite="false" />
           <property
             Id="28b646f4-a8e2-4ef5-8a57-4d11f2ad16a7"
-            name="Billet_id"
+            name="BilletId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7f70781f-f9cb-439f-ba3a-da26018f9cc1"
+            name="AntalVoksne"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="073c019b-7467-4d16-97d3-becb4923d3f9"
+            name="AntalStuderende"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -280,11 +280,66 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d"
-        name="BookingHandler"
+        Id="506767e7-27bb-43fd-b814-5dd578f7ac92"
+        name="SingleTonViewModel"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ea55a7da-ac5f-4236-be03-0799cdb758bf"
+            isDerived="false"
+            sourceEndRoleName="SingleTonViewModel"
+            targetEndRoleName="Vikingeskib"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b7c4f43f-3ed5-4e48-b576-bf6862b7afb0"
+              LastKnownName="Vikingeskib"
+              LastKnownLocation="Package_1008.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd6130c7-23ac-478b-ba4c-3c2f2f762d2a"
+                  name="SingleTonViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f83e1342-7c81-4bd2-bd2f-98ca167073ef"
+                  name="Vikingeskib"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4d1904fe-7202-4bd2-89ef-6ca84c7a4321"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9dc5cd59-ae3e-4990-88e1-5b236f0517c8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

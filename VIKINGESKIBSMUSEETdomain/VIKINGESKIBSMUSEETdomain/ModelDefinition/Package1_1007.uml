@@ -58,8 +58,55 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="7d655934-85cf-4bfa-bf52-982d371f1eb0"
+            isDerived="false"
+            sourceEndRoleName="Frontpage1"
+            targetEndRoleName="InfoPage"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a35daf6d-db6e-4499-89e3-1513ff7fec06"
+              LastKnownName="InfoPage"
+              LastKnownLocation="Package1_1007.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b0444c1-b675-420e-a3a2-c4ee3ec27faf"
+                  name="Frontpage1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1912421-42e1-4ac9-85f9-1fe3dc74d912"
+                  name="InfoPage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a35daf6d-db6e-4499-89e3-1513ff7fec06"
+        name="InfoPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
