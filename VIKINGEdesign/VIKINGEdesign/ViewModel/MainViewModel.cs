@@ -5,19 +5,14 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
 using VIKINGEdesign.Annotations;
-=======
 using Windows.UI.Xaml;
->>>>>>> origin/master
+
 
 namespace VIKINGEdesign.ViewModel
 {
     class MainViewModel : INotifyPropertyChanged
     {
-<<<<<<< HEAD
-
-
 
 
         #region PropertyChanged
@@ -33,8 +28,5 @@ namespace VIKINGEdesign.ViewModel
 
         #endregion
 
-=======
-        
->>>>>>> origin/master
     }
 }
