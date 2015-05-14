@@ -14,9 +14,11 @@ namespace VIKINGEdesign.ViewModel
 {
     class MainViewModel : INotifyPropertyChanged
     {
-
+        public Billet Billet { get; set; }
+        public Kunde Kunde { get; set; }
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
-        public static Vikingeskib SelectedVikingeskib { get; set; }
+        //public static Vikingeskib SelectedVikingeskib { get; set; }
+        
 
         public MainViewModel()
         {
