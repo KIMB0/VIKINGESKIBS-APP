@@ -71,8 +71,8 @@ namespace VIKINGEdesign.Model
             else
             {
                 //Data til testformål
-                Billeter.Add(new Billet(1,1,123456789,123456789,123456789,Convert.ToDateTime(2015-05-12),12.34,false));
-                Billeter.Add(new Billet(2,2,123456789,123456789,123456789,Convert.ToDateTime(2015-05-12),12.34,false));
+                Billeter.Add(new Billet(1,1,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+                Billeter.Add(new Billet(2,2,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
             }
         }
 
