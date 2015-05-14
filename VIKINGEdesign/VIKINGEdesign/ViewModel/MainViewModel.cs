@@ -7,12 +7,21 @@ using System.Text;
 using System.Threading.Tasks;
 using VIKINGEdesign.Annotations;
 using Windows.UI.Xaml;
+using VIKINGEdesign.Model;
 
 
 namespace VIKINGEdesign.ViewModel
 {
     class MainViewModel : INotifyPropertyChanged
     {
+
+        public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
+        public static Vikingeskib SelectedVikingeskib { get; set; }
+
+        public MainViewModel()
+        {
+            VikingeCatalogSingleton = Model.VikingeCatalogSingleton.Instance;
+        }
 
 
         #region PropertyChanged
