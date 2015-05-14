@@ -37,7 +37,7 @@ namespace VIKINGEdesign.Persistency
 
         public static async void SaveKunderAsJsonAsync(Kunde newKunde)
         {
-            const string ServerUrl = "http://localhost:6833";
+            const string ServerUrl = "http://localhost:3541";
 
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
@@ -61,7 +61,7 @@ namespace VIKINGEdesign.Persistency
         /// <returns></returns>
         public static async Task<List<Billet>> LoadBilleterFromJsonAsync()
         {
-            const string ServerUrl = "http://localhost:6833";
+            const string ServerUrl = "http://localhost:3541";
 
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
@@ -88,7 +88,7 @@ namespace VIKINGEdesign.Persistency
 
         public static async Task<List<Kunde>> LoadKunderFromJsonAsync()
         {
-            const string ServerUrl = "http://localhost:6833";
+            const string ServerUrl = "http://localhost:3541";
 
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;

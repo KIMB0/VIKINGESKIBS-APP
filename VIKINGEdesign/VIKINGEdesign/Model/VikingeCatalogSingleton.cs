@@ -47,8 +47,8 @@ namespace VIKINGEdesign.Model
         /// </summary>
         public async void LoadKunderAsync()
         {
-            var Kunder = await PersistencyService.LoadKunderFromJsonAsync();
-            if (Kunder != null)
+            var kunder = await PersistencyService.LoadKunderFromJsonAsync();
+            if (kunder != null)
                 foreach (var k in Kunder)
                 {
                     Kunder.Add(k);
@@ -62,8 +62,8 @@ namespace VIKINGEdesign.Model
         }
         public async void LoadBilleterAsync()
         {
-            var Billeter = await PersistencyService.LoadBilleterFromJsonAsync();
-            if (Billeter != null)
+            var billeter = await PersistencyService.LoadBilleterFromJsonAsync();
+            if (billeter != null)
                 foreach (var b in Billeter)
                 {
                     Billeter.Add(b);
