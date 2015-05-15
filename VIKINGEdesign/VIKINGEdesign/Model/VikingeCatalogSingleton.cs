@@ -87,15 +87,12 @@ namespace VIKINGEdesign.Model
         /// <param name="dateTime"></param>
         /// <param name="pris"></param>
         /// <param name="sejltur"></param>
-        public void AddBilleter(int billetId, int kundeId, int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
+        public void Add(int billetId, int kundeId, int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur, string email, string navn, int telefonNr)
         {
             Billet newBillet = new Billet(billetId,kundeId,antalBorn,antalStuderende,antalVoksne,dateTime,pris,sejltur);
             Billeter.Add(newBillet);
             PersistencyService.SaveBilleterAsJsonAsync(newBillet);
-        }
-        public void AddKunder(int kundeId, string email, string navn, int telefonNr)
-        {
-            Kunde newKunde = new Kunde(kundeId,email,navn,telefonNr);
+            Kunde newKunde = new Kunde(kundeId, email, navn, telefonNr);
             Kunder.Add(newKunde);
             PersistencyService.SaveKunderAsJsonAsync(newKunde);
         }
