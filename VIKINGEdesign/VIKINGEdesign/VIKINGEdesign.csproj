@@ -119,6 +119,7 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Handler\BilletHandler.cs" />
     <Compile Include="Model\Billet.cs" />
     <Compile Include="Model\Kunde.cs" />
     <Compile Include="Model\VikingeCatalogSingleton.cs" />
