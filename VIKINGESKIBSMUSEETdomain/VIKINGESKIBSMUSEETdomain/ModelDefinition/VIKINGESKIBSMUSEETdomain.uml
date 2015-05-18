@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="40f873af-ff2b-4e31-ba85-b79369f181e3"
   name="VIKINGESKIBSMUSEETdomain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -471,14 +471,6 @@
                 LastKnownName="OperandOccurrenceSpecification3"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="f348691b-279a-4876-b04a-8e8b6cbf5471"
-                LastKnownName="MessageOccurrenceSpecification13"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <messageOccurrenceSpecificationMoniker
-                Id="fdb486d3-4cf0-458e-b7ed-02c8a329f440"
-                LastKnownName="MessageOccurrenceSpecification16"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <messageOccurrenceSpecificationMoniker
                 Id="102d6893-be92-4a02-8b99-d43eac029578"
                 LastKnownName="MessageOccurrenceSpecification17"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
@@ -556,16 +548,12 @@
                 LastKnownName=": Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </coveredLifelines>
             <operands>
@@ -578,32 +566,112 @@
                     LastKnownName=": Billethandler"
                     LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                   <lifelineMoniker
-                    Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                    LastKnownName=": Vikingeskib"
-                    LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-                  <lifelineMoniker
                     Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                    LastKnownName="Bookinghandler"
+                    LastKnownName="Billethandler"
                     LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                   <lifelineMoniker
                     Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                    LastKnownName="Booking"
+                    LastKnownName="BilletId"
                     LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                 </coveredLifelines>
+                <fragments>
+                  <combinedFragment
+                    Id="24aac68a-985c-407f-bec3-27eef458c3a7"
+                    name="CombinedFragment1"
+                    interactionOperator="Alt">
+                    <coveredLifelines>
+                      <lifelineMoniker
+                        Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                        LastKnownName="Billethandler"
+                        LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                      <lifelineMoniker
+                        Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                        LastKnownName="BilletId"
+                        LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand
+                        Id="1dc72262-64d2-4679-b64f-eebaae69a3de"
+                        name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker
+                            Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                            LastKnownName="Billethandler"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <lifelineMoniker
+                            Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                            LastKnownName="BilletId"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint
+                            Id="7d6dcaab-b774-49de-9f8b-066e34f4cc3e"
+                            guardText="If Checkplads() = true" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker
+                            Id="c59c2a44-9e38-4ff5-98c9-548bd1b5b9cd"
+                            LastKnownName="OperandOccurrenceSpecification17"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="5ceca6fd-140d-42e8-b31f-f10aa0f71beb"
+                            LastKnownName="OperandOccurrenceSpecification18"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="bdcafb8a-edad-4caf-b98d-42cad111fec1"
+                            LastKnownName="OperandOccurrenceSpecification19"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="796246a7-10c4-40b2-845e-1b2803149bf0"
+                            LastKnownName="OperandOccurrenceSpecification20"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                      <interactionOperand
+                        Id="4e67ff52-33d0-4435-9e23-cb3eb7cf0ea0"
+                        name="InteractionOperand2">
+                        <coveredLifelines>
+                          <lifelineMoniker
+                            Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                            LastKnownName="Billethandler"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <lifelineMoniker
+                            Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                            LastKnownName="BilletId"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint
+                            Id="406c6b1d-4c4c-4140-8098-485a4a3c6da6" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker
+                            Id="2eabfdb6-708d-42b9-a95c-a1b21dc44e04"
+                            LastKnownName="OperandOccurrenceSpecification21"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="8ae21905-c847-4fc4-baef-26f256e0bc7e"
+                            LastKnownName="OperandOccurrenceSpecification22"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="8252acd8-350c-4d42-8056-021a24f1e25e"
+                            LastKnownName="OperandOccurrenceSpecification23"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="996e4c3d-f0cd-4884-9b12-8a2b50789553"
+                            LastKnownName="OperandOccurrenceSpecification24"
+                            LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
                 <guard>
                   <interactionConstraint
                     Id="989dacaa-bffd-42ce-8a3d-2e4af463a561"
                     guardText="If MedSejltur() = true" />
                 </guard>
                 <operandOccurrenceSpecifications>
-                  <operandOccurrenceSpecificationMoniker
-                    Id="d09401c8-1657-447c-ac17-f67110a29f44"
-                    LastKnownName="OperandOccurrenceSpecification1"
-                    LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-                  <operandOccurrenceSpecificationMoniker
-                    Id="ff104583-74aa-45be-82ac-5fec9e53f0ac"
-                    LastKnownName="OperandOccurrenceSpecification2"
-                    LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                   <operandOccurrenceSpecificationMoniker
                     Id="44ca09bd-10b8-458d-b29f-284157a8471a"
                     LastKnownName="OperandOccurrenceSpecification3"
@@ -639,16 +707,12 @@
                     LastKnownName=": Billethandler"
                     LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                   <lifelineMoniker
-                    Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                    LastKnownName=": Vikingeskib"
-                    LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-                  <lifelineMoniker
                     Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                    LastKnownName="Bookinghandler"
+                    LastKnownName="Billethandler"
                     LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                   <lifelineMoniker
                     Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                    LastKnownName="Booking"
+                    LastKnownName="BilletId"
                     LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                 </coveredLifelines>
                 <guard>
@@ -656,14 +720,6 @@
                     Id="5bb5d99a-80eb-403c-8986-de7b9cb6d919" />
                 </guard>
                 <operandOccurrenceSpecifications>
-                  <operandOccurrenceSpecificationMoniker
-                    Id="55890651-e63c-4269-becd-4a3e43e2511a"
-                    LastKnownName="OperandOccurrenceSpecification5"
-                    LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-                  <operandOccurrenceSpecificationMoniker
-                    Id="749f1edb-0526-4d66-9478-4a09fd464f43"
-                    LastKnownName="OperandOccurrenceSpecification6"
-                    LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
                   <operandOccurrenceSpecificationMoniker
                     Id="4e7ff4a5-113e-40af-9109-b2047512437b"
                     LastKnownName="OperandOccurrenceSpecification7"
@@ -698,7 +754,7 @@
             <covered>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -708,17 +764,7 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="d09401c8-1657-447c-ac17-f67110a29f44"
-            name="OperandOccurrenceSpecification1">
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -733,120 +779,12 @@
             </covered>
           </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
-            Id="b7b86f32-fca7-4ba8-a7f4-47a93ec09e0b"
-            name="BehaviorExecutionSpecification6">
-            <coveredLifelines>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </coveredLifelines>
-            <finish>
-              <executionOccurrenceSpecificationMoniker
-                Id="a81dceba-1e9f-4341-9ad8-fca455827df1"
-                LastKnownName="ExecutionOccurrenceSpecification12"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </finish>
-            <start>
-              <executionOccurrenceSpecificationMoniker
-                Id="2ff66f07-71aa-4c62-84ed-943161787284"
-                LastKnownName="ExecutionOccurrenceSpecification11"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </start>
-            <nestedOccurrences>
-              <messageOccurrenceSpecificationMoniker
-                Id="7955b82a-6d00-4943-a152-e55595872fbc"
-                LastKnownName="MessageOccurrenceSpecification14"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <messageOccurrenceSpecificationMoniker
-                Id="11b1e70e-d61b-4397-a1e6-7168614763c1"
-                LastKnownName="MessageOccurrenceSpecification15"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </nestedOccurrences>
-          </behaviorExecutionSpecification>
-          <executionOccurrenceSpecification
-            Id="2ff66f07-71aa-4c62-84ed-943161787284"
-            name="ExecutionOccurrenceSpecification11">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="e2e28bbf-1bb4-4360-8c35-0c3492caf0eb"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="7955b82a-6d00-4943-a152-e55595872fbc"
-            name="MessageOccurrenceSpecification14">
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="f348691b-279a-4876-b04a-8e8b6cbf5471"
-            name="MessageOccurrenceSpecification13">
-            <covered>
-              <lifelineMoniker
-                Id="1471a3a6-f637-4dc2-acc7-8608de0e7a24"
-                LastKnownName=": Billethandler"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="fdb486d3-4cf0-458e-b7ed-02c8a329f440"
-            name="MessageOccurrenceSpecification16">
-            <covered>
-              <lifelineMoniker
-                Id="1471a3a6-f637-4dc2-acc7-8608de0e7a24"
-                LastKnownName=": Billethandler"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="11b1e70e-d61b-4397-a1e6-7168614763c1"
-            name="MessageOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <executionOccurrenceSpecification
-            Id="a81dceba-1e9f-4341-9ad8-fca455827df1"
-            name="ExecutionOccurrenceSpecification12">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="0ebb8603-e4b9-4d94-a102-341ebeacd057"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
-          <behaviorExecutionSpecification
             Id="9d668335-e9e8-42d4-ad22-25783f2ba286"
             name="BehaviorExecutionSpecification7">
             <coveredLifelines>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </coveredLifelines>
             <finish>
@@ -866,6 +804,10 @@
                 Id="372a7148-1c5e-4504-8ca8-d644287bf4cb"
                 LastKnownName="MessageOccurrenceSpecification18"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="bdcafb8a-edad-4caf-b98d-42cad111fec1"
+                LastKnownName="OperandOccurrenceSpecification19"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="b0c0d933-6d1b-43df-929a-cb62b047c8ad"
                 LastKnownName="MessageOccurrenceSpecification25"
@@ -873,6 +815,18 @@
               <messageOccurrenceSpecificationMoniker
                 Id="5711e5ba-9f9b-4910-8678-9dc9c5cfa981"
                 LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="796246a7-10c4-40b2-845e-1b2803149bf0"
+                LastKnownName="OperandOccurrenceSpecification20"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="8252acd8-350c-4d42-8056-021a24f1e25e"
+                LastKnownName="OperandOccurrenceSpecification23"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="996e4c3d-f0cd-4884-9b12-8a2b50789553"
+                LastKnownName="OperandOccurrenceSpecification24"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="50bcaf2b-f010-481e-8c13-116f55ca95a1"
@@ -894,7 +848,7 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -904,7 +858,7 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -918,13 +872,33 @@
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="bdcafb8a-edad-4caf-b98d-42cad111fec1"
+            name="OperandOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="c59c2a44-9e38-4ff5-98c9-548bd1b5b9cd"
+            name="OperandOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="b0255ffd-fc96-488e-9710-c9063f684f42"
             name="BehaviorExecutionSpecification9">
             <coveredLifelines>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </coveredLifelines>
             <finish>
@@ -964,7 +938,7 @@
             <covered>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -974,7 +948,7 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -984,7 +958,7 @@
             <covered>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -994,7 +968,7 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1004,7 +978,7 @@
             <covered>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1022,10 +996,80 @@
             <covered>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="5ceca6fd-140d-42e8-b31f-f10aa0f71beb"
+            name="OperandOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="796246a7-10c4-40b2-845e-1b2803149bf0"
+            name="OperandOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="8252acd8-350c-4d42-8056-021a24f1e25e"
+            name="OperandOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="2eabfdb6-708d-42b9-a95c-a1b21dc44e04"
+            name="OperandOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="8ae21905-c847-4fc4-baef-26f256e0bc7e"
+            name="OperandOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="996e4c3d-f0cd-4884-9b12-8a2b50789553"
+            name="OperandOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="50bcaf2b-f010-481e-8c13-116f55ca95a1"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="bfd721a7-8f7e-4d47-83ed-87cd568482af"
             name="MessageOccurrenceSpecification20">
@@ -1033,16 +1077,6 @@
               <lifelineMoniker
                 Id="1471a3a6-f637-4dc2-acc7-8608de0e7a24"
                 LastKnownName=": Billethandler"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="50bcaf2b-f010-481e-8c13-116f55ca95a1"
-            name="MessageOccurrenceSpecification19">
-            <covered>
-              <lifelineMoniker
-                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1060,27 +1094,17 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="ff104583-74aa-45be-82ac-5fec9e53f0ac"
-            name="OperandOccurrenceSpecification2">
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
             Id="3aab76e0-854e-4f24-b657-b32f65e0a73a"
             name="OperandOccurrenceSpecification14">
             <covered>
               <lifelineMoniker
                 Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1100,27 +1124,7 @@
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="becf7244-933c-49d4-98b5-0e9f35e2ecca"
-            name="OperandOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="94896cd7-0d5a-4b07-887b-0c596ef1f8fd"
-            name="OperandOccurrenceSpecification11">
-            <covered>
-              <lifelineMoniker
-                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1135,32 +1139,22 @@
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="55890651-e63c-4269-becd-4a3e43e2511a"
-            name="OperandOccurrenceSpecification5">
-            <covered>
-              <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="cc4de121-56dc-405d-a7df-21bf1a22e8bd"
-            name="OperandOccurrenceSpecification16">
-            <covered>
-              <lifelineMoniker
-                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="Booking"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="d22981ee-afb3-424c-abf5-f181a5a50dac"
-            name="OperandOccurrenceSpecification12">
+            Id="94896cd7-0d5a-4b07-887b-0c596ef1f8fd"
+            name="OperandOccurrenceSpecification11">
             <covered>
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Bookinghandler"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="becf7244-933c-49d4-98b5-0e9f35e2ecca"
+            name="OperandOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1175,12 +1169,22 @@
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="749f1edb-0526-4d66-9478-4a09fd464f43"
-            name="OperandOccurrenceSpecification6">
+            Id="d22981ee-afb3-424c-abf5-f181a5a50dac"
+            name="OperandOccurrenceSpecification12">
             <covered>
               <lifelineMoniker
-                Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-                LastKnownName=": Vikingeskib"
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="cc4de121-56dc-405d-a7df-21bf1a22e8bd"
+            name="OperandOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1255,22 +1259,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="0577aef7-b113-4960-ae2b-82b6fea022c5"
-            name="MessageOccurrenceSpecification39">
-            <covered>
-              <lifelineMoniker
-                Id="99961958-3df6-4b35-a8c8-61dc0752e4f3"
-                LastKnownName="Billet"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="6b48c7d1-8a1c-41ee-a556-21a24464eafb"
             name="MessageOccurrenceSpecification40">
             <covered>
               <lifelineMoniker
                 Id="1471a3a6-f637-4dc2-acc7-8608de0e7a24"
                 LastKnownName=": Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0577aef7-b113-4960-ae2b-82b6fea022c5"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="99961958-3df6-4b35-a8c8-61dc0752e4f3"
+                LastKnownName="Billet"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1346,47 +1350,10 @@
             </topLevelOccurrences>
           </lifeline>
           <lifeline
-            Id="03378595-887d-4c9a-b0e8-244b1d685fae"
-            name=": Vikingeskib"
-            isActor="false"
-            lifelineDisplayName=": Vikingeskib">
-            <represents>
-              <propertyMoniker
-                Id="e96b83a9-dd14-49cf-bbf2-f97ccc4d8870"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </represents>
-            <topLevelOccurrences>
-              <operandOccurrenceSpecificationMoniker
-                Id="d09401c8-1657-447c-ac17-f67110a29f44"
-                LastKnownName="OperandOccurrenceSpecification1"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <executionOccurrenceSpecificationMoniker
-                Id="2ff66f07-71aa-4c62-84ed-943161787284"
-                LastKnownName="ExecutionOccurrenceSpecification11"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <executionOccurrenceSpecificationMoniker
-                Id="a81dceba-1e9f-4341-9ad8-fca455827df1"
-                LastKnownName="ExecutionOccurrenceSpecification12"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="ff104583-74aa-45be-82ac-5fec9e53f0ac"
-                LastKnownName="OperandOccurrenceSpecification2"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="55890651-e63c-4269-becd-4a3e43e2511a"
-                LastKnownName="OperandOccurrenceSpecification5"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="749f1edb-0526-4d66-9478-4a09fd464f43"
-                LastKnownName="OperandOccurrenceSpecification6"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </topLevelOccurrences>
-          </lifeline>
-          <lifeline
             Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-            name="Bookinghandler"
+            name="Billethandler"
             isActor="false"
-            lifelineDisplayName="Bookinghandler">
+            lifelineDisplayName="Billethandler">
             <topLevelOccurrences>
               <operandOccurrenceSpecificationMoniker
                 Id="b0fbd851-ecbc-4ffa-afc6-feeb5e3b5920"
@@ -1416,18 +1383,17 @@
           </lifeline>
           <lifeline
             Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-            name="Booking"
+            name="BilletId"
             isActor="false"
-            lifelineDisplayName="Booking">
-            <represents>
-              <propertyMoniker
-                Id="6f4ba008-3ba5-48c9-ac00-816040823e8a"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </represents>
+            lifelineDisplayName="BilletId">
             <topLevelOccurrences>
               <operandOccurrenceSpecificationMoniker
                 Id="9380c28c-14bf-47b0-aaed-43b593a4c30f"
                 LastKnownName="OperandOccurrenceSpecification13"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="c59c2a44-9e38-4ff5-98c9-548bd1b5b9cd"
+                LastKnownName="OperandOccurrenceSpecification17"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="db9b75ef-e96c-4ec5-bddb-5c2829678817"
@@ -1436,6 +1402,18 @@
               <executionOccurrenceSpecificationMoniker
                 Id="000cd78d-9494-405c-b5a4-66f8761fd7f8"
                 LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="5ceca6fd-140d-42e8-b31f-f10aa0f71beb"
+                LastKnownName="OperandOccurrenceSpecification18"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="2eabfdb6-708d-42b9-a95c-a1b21dc44e04"
+                LastKnownName="OperandOccurrenceSpecification21"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="8ae21905-c847-4fc4-baef-26f256e0bc7e"
+                LastKnownName="OperandOccurrenceSpecification22"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
               <operandOccurrenceSpecificationMoniker
                 Id="3aab76e0-854e-4f24-b657-b32f65e0a73a"
@@ -1471,7 +1449,7 @@
         <messages>
           <message
             Id="6a1857d7-7367-4636-95e3-21fa0daf1310"
-            name="Angive oplysninger (med sejltur, tudspunkt)"
+            name="Angive oplysninger (med sejltur, dato)"
             messageKind="Complete"
             messageSort="AsynchCall"
             createSelfMessage="false">
@@ -1485,44 +1463,6 @@
               <messageOccurrenceSpecificationMoniker
                 Id="353f1287-c72d-49b3-9cba-afdadf56c0fe"
                 LastKnownName="MessageOccurrenceSpecification2"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </receiveEvent>
-          </message>
-          <message
-            Id="55a1ca90-f248-4c34-a510-f1e5fd7e332c"
-            name="Med sejltur"
-            messageKind="Complete"
-            messageSort="SynchCall"
-            createSelfMessage="false">
-            <sendEvent>
-              <messageOccurrenceSpecificationMoniker
-                Id="f348691b-279a-4876-b04a-8e8b6cbf5471"
-                LastKnownName="MessageOccurrenceSpecification13"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </sendEvent>
-            <receiveEvent>
-              <messageOccurrenceSpecificationMoniker
-                Id="7955b82a-6d00-4943-a152-e55595872fbc"
-                LastKnownName="MessageOccurrenceSpecification14"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </receiveEvent>
-          </message>
-          <message
-            Id="edb837b4-5b9f-4532-9b69-0f51d45b9516"
-            name="MedSejltur()"
-            messageKind="Complete"
-            messageSort="Reply"
-            createSelfMessage="false">
-            <sendEvent>
-              <messageOccurrenceSpecificationMoniker
-                Id="11b1e70e-d61b-4397-a1e6-7168614763c1"
-                LastKnownName="MessageOccurrenceSpecification15"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </sendEvent>
-            <receiveEvent>
-              <messageOccurrenceSpecificationMoniker
-                Id="fdb486d3-4cf0-458e-b7ed-02c8a329f440"
-                LastKnownName="MessageOccurrenceSpecification16"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </receiveEvent>
           </message>
@@ -1547,7 +1487,7 @@
           </message>
           <message
             Id="c8339473-7ac2-4756-a561-2fcba36a72e6"
-            name="&lt;&lt;create booking&gt;&gt;"
+            name="&lt;&lt;create billetId&gt;&gt;"
             messageKind="Complete"
             messageSort="CreateMessage"
             createSelfMessage="false">
@@ -1566,7 +1506,7 @@
           </message>
           <message
             Id="470c44e1-97c9-4305-8412-006c5a1ae44e"
-            name="&lt;&lt;return booking&gt;&gt;"
+            name="&lt;&lt;return billetId&gt;&gt;"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -1674,22 +1614,6 @@
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="6f4ba008-3ba5-48c9-ac00-816040823e8a"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="e054c577-b611-4ba2-ba26-a0b56f19b382"
-                LastKnownName="Booking"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
@@ -1701,16 +1625,6 @@
     <packageHasNamedElement>
       <executionEvent
         Id="475e0656-2536-48bb-8ea5-45a1655e6365"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="e2e28bbf-1bb4-4360-8c35-0c3492caf0eb"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="0ebb8603-e4b9-4d94-a102-341ebeacd057"
         name="ExecutionEvent" />
     </packageHasNamedElement>
     <packageHasNamedElement>
