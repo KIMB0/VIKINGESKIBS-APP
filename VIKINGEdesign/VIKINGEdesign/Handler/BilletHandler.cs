@@ -18,7 +18,11 @@ namespace VIKINGEdesign.Handler
 
         public void CreateBillet()
         {
-            MainViewModel.VikingeCatalogSingleton.Add(MainViewModel.Billet.AntalBorn, MainViewModel.Billet.AntalStuderende, MainViewModel.Billet.AntalVoksne, MainViewModel.Billet.Billet_id, MainViewModel.Billet.Kunde_id, MainViewModel.Billet.Pris, MainViewModel.Billet.DateTime, MainViewModel.Billet.Sejltur, MainViewModel.Kunde.Email, MainViewModel.Kunde.Navn, MainViewModel.Kunde.Kunde_id, MainViewModel.Kunde.TelefonNr);
+            MainViewModel.VikingeCatalogSingleton.Add(MainViewModel.Billet.Billet_id, MainViewModel.Kunde.Kunde_id, MainViewModel.Billet.AntalBorn, 
+                                                        MainViewModel.Billet.AntalStuderende, MainViewModel.Billet.AntalVoksne,
+                                                        MainViewModel.Billet.DateTime, MainViewModel.Billet.Pris, 
+                                                        MainViewModel.Billet.Sejltur, MainViewModel.Kunde.Email, 
+                                                        MainViewModel.Kunde.Navn, MainViewModel.Kunde.TelefonNr);
         }
     }
 }
