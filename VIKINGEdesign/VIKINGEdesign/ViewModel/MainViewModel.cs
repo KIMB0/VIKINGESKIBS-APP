@@ -25,7 +25,6 @@ namespace VIKINGEdesign.ViewModel
         private DateTime _dateTime;
         private double _pris;
         private bool _sejltur;
-
         private string _email;
         private string _navn;
         private int _telefonNr;
