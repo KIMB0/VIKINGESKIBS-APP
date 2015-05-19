@@ -56,8 +56,8 @@ namespace VIKINGEdesign.Model
             else
             {
                 //Data til testformål
-                Kunder.Add(new Kunde("Email1","Navn1",12345678));
-                Kunder.Add(new Kunde("Email2","Navn2",12345678));
+                Kunder.Add(new Kunde("Email1","Navn1","12345678"));
+                Kunder.Add(new Kunde("Email2","Navn2","12345678"));
             }
         }
         public async void LoadBilleterAsync()
@@ -87,7 +87,7 @@ namespace VIKINGEdesign.Model
         /// <param name="dateTime"></param>
         /// <param name="pris"></param>
         /// <param name="sejltur"></param>
-        public void Add(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur, string email, string navn, int telefonNr)
+        public void Add(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur, string email, string navn, string telefonNr)
         {
             Kunde newKunde = new Kunde(email, navn, telefonNr);
             Kunder.Add(newKunde);

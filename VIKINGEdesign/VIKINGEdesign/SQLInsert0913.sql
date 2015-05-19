@@ -1,5 +1,5 @@
 /* Insert values into tables*/
-INSERT INTO Kunder VALUES ('email','navn',12345678);
+INSERT INTO Kunder VALUES ('email','navn','12345678');
 
 INSERT INTO Priser VALUES (115);
 INSERT INTO Priser VALUES (100);

@@ -9,11 +9,6 @@ namespace VIKINGEdesignWEB
     [Table("Billeter")]
     public partial class Billeter
     {
-        public Billeter()
-        {
-            Bookings = new HashSet<Booking>();
-        }
-
         [Key]
         public int BilletID { get; set; }
 
@@ -27,12 +22,11 @@ namespace VIKINGEdesignWEB
 
         public DateTime Dato { get; set; }
 
-        public double Pris { get; set; }
+        [Column(TypeName = "money")]
+        public decimal? Pris { get; set; }
 
         public bool? Sejltur { get; set; }
 
         public virtual Kunder Kunder { get; set; }
-
-        public virtual ICollection<Booking> Bookings { get; set; }
     }
 }

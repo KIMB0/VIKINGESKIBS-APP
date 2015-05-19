@@ -27,7 +27,7 @@ namespace VIKINGEdesign.ViewModel
         private bool _sejltur;
         private string _email;
         private string _navn;
-        private int _telefonNr;
+        private string _telefonNr;
 
         public Billet Billet { get; set; }
         public Kunde Kunde { get; set; }
@@ -119,7 +119,7 @@ namespace VIKINGEdesign.ViewModel
             set { _email = value; OnPropertyChanged(); }
         }
 
-        public int TelefonNr
+        public string TelefonNr
         {
             get { return _telefonNr; }
             set { _telefonNr = value; OnPropertyChanged(); }

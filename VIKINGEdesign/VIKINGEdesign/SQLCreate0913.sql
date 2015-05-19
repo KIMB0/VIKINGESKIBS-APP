@@ -7,7 +7,7 @@ CREATE TABLE Kunder(
      KundeID  int  NOT NULL PRIMARY KEY IDENTITY(1,1),
      Email      NvarChar(MAX)     NOT NULL,
      Navn   NvarChar(MAX)  NOT NULL,
-	 Telefon int NOT NULL
+	 Telefon NvarChar(MAX) NOT NULL
 );
 
 CREATE TABLE Priser(

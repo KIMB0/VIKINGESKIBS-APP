@@ -11,13 +11,13 @@ namespace VIKINGEdesign.Model
         private int _kundeId;
         private string _email;
         private string _navn;
-        private int _telefonNr;
+        private string _telefon;
 
-        public Kunde(string email, string navn, int telefonNr)
+        public Kunde(string email, string navn, string telefon)
         {
             _email = email;
             _navn = navn;
-            _telefonNr = telefonNr;
+            _telefon = telefon;
         }
 
         public int Kunde_id
@@ -38,10 +38,10 @@ namespace VIKINGEdesign.Model
             set { _email = value; }
         }
 
-        public int TelefonNr
+        public string Telefon
         {
-            get { return _telefonNr; }
-            set { _telefonNr = value; }
+            get { return _telefon; }
+            set { _telefon = value; }
         }
     }
 }

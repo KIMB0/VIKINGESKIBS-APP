@@ -12,6 +12,7 @@ namespace VIKINGEdesignWEB
         [Key]
         public int PrisID { get; set; }
 
-        public double Pris { get; set; }
+        [Column(TypeName = "money")]
+        public decimal? Pris { get; set; }
     }
 }

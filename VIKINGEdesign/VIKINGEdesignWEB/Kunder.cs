@@ -12,7 +12,6 @@ namespace VIKINGEdesignWEB
         public Kunder()
         {
             Billeters = new HashSet<Billeter>();
-            Bookings = new HashSet<Booking>();
         }
 
         [Key]
@@ -24,10 +23,9 @@ namespace VIKINGEdesignWEB
         [Required]
         public string Navn { get; set; }
 
-        public int Telefon { get; set; }
+        [Required]
+        public string Telefon { get; set; }
 
         public virtual ICollection<Billeter> Billeters { get; set; }
-
-        public virtual ICollection<Booking> Bookings { get; set; }
     }
 }

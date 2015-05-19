@@ -8,7 +8,7 @@ namespace VIKINGEdesignWEB
     public partial class vikingeContext : DbContext
     {
         public vikingeContext()
-            : base("name=vikingeContext")
+            : base("name=vikingeContext1")
         {
             base.Configuration.ProxyCreationEnabled = false;
         }
@@ -20,10 +20,18 @@ namespace VIKINGEdesignWEB
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Billeter>()
+                .Property(e => e.Pris)
+                .HasPrecision(19, 4);
+
             modelBuilder.Entity<Kunder>()
                 .HasMany(e => e.Billeters)
                 .WithRequired(e => e.Kunder)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Priser>()
+                .Property(e => e.Pris)
+                .HasPrecision(19, 4);
         }
     }
 }
