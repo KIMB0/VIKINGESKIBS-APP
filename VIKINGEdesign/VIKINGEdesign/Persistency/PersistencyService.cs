@@ -50,7 +50,7 @@ namespace VIKINGEdesign.Persistency
                 try
                 {
                     var response = client.PostAsJsonAsync("api/Kunders", newKunde).Result;
-                    int id = response.Content.ReadAsAsync<int>().Id;
+                    
                 }
                 catch { }
             }
