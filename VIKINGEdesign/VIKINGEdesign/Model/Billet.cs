@@ -20,10 +20,8 @@ namespace VIKINGEdesign.Model
         private double _pris;
         private bool _sejltur;
 
-        public Billet(int billetId, int kundeId, int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
+        public Billet(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
         {
-            _billetId = billetId;
-            _kundeId = kundeId;
             _antalBorn = antalBorn;
             _antalStuderende = antalStuderende;
             _antalVoksne = antalVoksne;

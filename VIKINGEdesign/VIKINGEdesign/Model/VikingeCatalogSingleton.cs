@@ -56,8 +56,8 @@ namespace VIKINGEdesign.Model
             else
             {
                 //Data til testformål
-                Kunder.Add(new Kunde(1,"Email1","Navn1",12345678));
-                Kunder.Add(new Kunde(2,"Email2","Navn2",12345678));
+                Kunder.Add(new Kunde("Email1","Navn1",12345678));
+                Kunder.Add(new Kunde("Email2","Navn2",12345678));
             }
         }
         public async void LoadBilleterAsync()
@@ -71,8 +71,8 @@ namespace VIKINGEdesign.Model
             else
             {
                 //Data til testformål
-                Billeter.Add(new Billet(1,1,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
-                Billeter.Add(new Billet(2,2,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+                Billeter.Add(new Billet(123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+                Billeter.Add(new Billet(123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
             }
         }
 
@@ -87,14 +87,14 @@ namespace VIKINGEdesign.Model
         /// <param name="dateTime"></param>
         /// <param name="pris"></param>
         /// <param name="sejltur"></param>
-        public void Add(int billetId, int kundeId, int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur, string email, string navn, int telefonNr)
+        public void Add(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur, string email, string navn, int telefonNr)
         {
-            Billet newBillet = new Billet(billetId,kundeId,antalBorn,antalStuderende,antalVoksne,dateTime,pris,sejltur);
-            Billeter.Add(newBillet);
-            PersistencyService.SaveBilleterAsJsonAsync(newBillet);
-            Kunde newKunde = new Kunde(kundeId, email, navn, telefonNr);
+            Kunde newKunde = new Kunde(email, navn, telefonNr);
             Kunder.Add(newKunde);
             PersistencyService.SaveKunderAsJsonAsync(newKunde);
+            Billet newBillet = new Billet(antalBorn, antalStuderende, antalVoksne, dateTime, pris, sejltur);
+            Billeter.Add(newBillet);
+            PersistencyService.SaveBilleterAsJsonAsync(newBillet);
         }
     }
 }

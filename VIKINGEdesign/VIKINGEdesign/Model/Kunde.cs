@@ -13,9 +13,8 @@ namespace VIKINGEdesign.Model
         private string _navn;
         private int _telefonNr;
 
-        public Kunde(int kundeId, string email, string navn, int telefonNr)
+        public Kunde(string email, string navn, int telefonNr)
         {
-            _kundeId = kundeId;
             _email = email;
             _navn = navn;
             _telefonNr = telefonNr;
