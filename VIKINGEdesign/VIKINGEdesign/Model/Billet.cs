@@ -20,8 +20,9 @@ namespace VIKINGEdesign.Model
         private double _pris;
         private bool _sejltur;
 
-        public Billet(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
+        public Billet(int kundeId,int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
         {
+            _kundeId = kundeId;
             _antalBorn = antalBorn;
             _antalStuderende = antalStuderende;
             _antalVoksne = antalVoksne;
@@ -30,19 +31,19 @@ namespace VIKINGEdesign.Model
             _sejltur = sejltur;
         }
 
-        public int Billet_id
+        public int BilletID
         {
             get { return _billetId; }
             set { _billetId = value; }
         }
 
-        public int Kunde_id
+        public int KundeID
         {
             get { return _kundeId; }
             set { _kundeId = value; }
         }
 
-        public int AntalStuderende
+        public int AntalSuderende
         {
             get { return _antalStuderende; }
             set { _antalStuderende = value; }
@@ -54,7 +55,7 @@ namespace VIKINGEdesign.Model
             set { _antalBorn = value; }
         }
 
-        public int AntalVoksne
+        public int AntalVoksen
         {
             get { return _antalVoksne; }
             set { _antalVoksne = value; }
@@ -65,9 +66,9 @@ namespace VIKINGEdesign.Model
             get { return _sejltur; }
             set { _sejltur = value; }
         }
-        
 
-        public DateTime DateTime
+
+        public DateTime Dato
         {
             get { return _dateTime; }
             set { _dateTime = value; }

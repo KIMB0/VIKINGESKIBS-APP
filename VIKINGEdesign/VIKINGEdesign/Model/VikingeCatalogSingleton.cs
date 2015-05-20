@@ -71,8 +71,8 @@ namespace VIKINGEdesign.Model
             else
             {
                 //Data til testformål
-                Billeter.Add(new Billet(123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
-                Billeter.Add(new Billet(123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+                Billeter.Add(new Billet(1,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+                Billeter.Add(new Billet(2,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
             }
         }
 
@@ -92,7 +92,7 @@ namespace VIKINGEdesign.Model
             Kunde newKunde = new Kunde(email, navn, telefonNr);
             Kunder.Add(newKunde);
             PersistencyService.SaveKunderAsJsonAsync(newKunde);
-            Billet newBillet = new Billet(antalBorn, antalStuderende, antalVoksne, dateTime, pris, sejltur);
+            Billet newBillet = new Billet(PersistencyService.ID,antalBorn, antalStuderende, antalVoksne, new DateTime(dateTime.Year,dateTime.Month,dateTime.Day), pris, sejltur);
             Billeter.Add(newBillet);
             PersistencyService.SaveBilleterAsJsonAsync(newBillet);
         }

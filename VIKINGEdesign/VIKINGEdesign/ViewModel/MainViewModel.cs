@@ -22,7 +22,8 @@ namespace VIKINGEdesign.ViewModel
         private int _antalBorn;
         private int _antalStuderende;
         private int _antalVoksne;
-        private DateTime _dateTime;
+        //private DateTime _dateTime;
+        private DateTimeOffset _dateTime = DateTimeOffset.Now;
         private double _pris;
         private bool _sejltur;
         private string _email;
@@ -95,7 +96,7 @@ namespace VIKINGEdesign.ViewModel
         }
 
 
-        public DateTime DateTime
+        public DateTimeOffset DateTime
         {
             get { return _dateTime; }
             set { _dateTime = value; OnPropertyChanged(); }

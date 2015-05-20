@@ -11,6 +11,8 @@ namespace VIKINGEdesign.Persistency
 {
     class PersistencyService
     {
+        public static int ID;
+
         /// <summary>
         /// Poster evented til databasen.
         /// </summary>
@@ -50,7 +52,7 @@ namespace VIKINGEdesign.Persistency
                 try
                 {
                     var response = client.PostAsJsonAsync("api/Kunders", newKunde).Result;
-                    
+                    ID = Convert.ToInt32(response.Headers.Location.Segments[3]);
                 }
                 catch { }
             }
