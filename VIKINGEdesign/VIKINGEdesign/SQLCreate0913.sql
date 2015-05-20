@@ -12,7 +12,8 @@ CREATE TABLE Kunder(
 
 CREATE TABLE Priser(
 	 PrisID int NOT NULL PRIMARY KEY IDENTITY(1,1),
-	 Pris money
+	 Pris money,
+	 Gruppe NvarChar(MAX) NOT NULL
 );
 
 CREATE TABLE Billeter(

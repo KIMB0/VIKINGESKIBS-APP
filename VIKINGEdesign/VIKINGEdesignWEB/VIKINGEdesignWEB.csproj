@@ -168,7 +168,7 @@
     <Compile Include="Kunder.cs" />
     <Compile Include="Priser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="vikingeContext.cs" />
+    <Compile Include="VikingeContext.cs" />
     <Compile Include="VikingeSkibe.cs" />
   </ItemGroup>
   <ItemGroup>

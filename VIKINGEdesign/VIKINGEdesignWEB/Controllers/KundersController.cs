@@ -14,7 +14,7 @@ namespace VIKINGEdesignWEB.Controllers
 {
     public class KundersController : ApiController
     {
-        private vikingeContext db = new vikingeContext();
+        private VikingeContext db = new VikingeContext();
 
         // GET: api/Kunders
         public IQueryable<Kunder> GetKunders()

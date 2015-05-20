@@ -1,9 +1,9 @@
 /* Insert values into tables*/
 INSERT INTO Kunder VALUES ('email','navn','12345678');
 
-INSERT INTO Priser VALUES (115);
-INSERT INTO Priser VALUES (100);
-INSERT INTO Priser VALUES (0);
+INSERT INTO Priser VALUES (115,'Voksen');
+INSERT INTO Priser VALUES (100,'Studerende');
+INSERT INTO Priser VALUES (0,'Born');
 
 INSERT INTO Billeter VALUES (1,123456789,123456789,123456789,2015-05-07,123.45,0);
 

@@ -14,7 +14,7 @@ namespace VIKINGEdesignWEB.Controllers
 {
     public class BilletersController : ApiController
     {
-        private vikingeContext db = new vikingeContext();
+        private VikingeContext db = new VikingeContext();
 
         // GET: api/Billeters
         public IQueryable<Billeter> GetBilleters()

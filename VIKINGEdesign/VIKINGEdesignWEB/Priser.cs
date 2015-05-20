@@ -14,5 +14,8 @@ namespace VIKINGEdesignWEB
 
         [Column(TypeName = "money")]
         public decimal? Pris { get; set; }
+
+        [Required]
+        public string Gruppe { get; set; }
     }
 }

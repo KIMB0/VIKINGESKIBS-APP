@@ -5,12 +5,11 @@ namespace VIKINGEdesignWEB
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class vikingeContext : DbContext
+    public partial class VikingeContext : DbContext
     {
-        public vikingeContext()
-            : base("name=vikingeContext1")
+        public VikingeContext()
+            : base("name=VikingeContext")
         {
-            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Billeter> Billeters { get; set; }

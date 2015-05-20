@@ -14,7 +14,7 @@ namespace VIKINGEdesignWEB.Controllers
 {
     public class PrisersController : ApiController
     {
-        private vikingeContext db = new vikingeContext();
+        private VikingeContext db = new VikingeContext();
 
         // GET: api/Prisers
         public IQueryable<Priser> GetPrisers()
