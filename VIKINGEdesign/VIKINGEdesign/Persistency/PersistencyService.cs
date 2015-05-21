@@ -115,5 +115,31 @@ namespace VIKINGEdesign.Persistency
                 catch { return null; }
             }
         }
+        public static async Task<List<Priser>> LoadPriserFromJsonAsync()
+        {
+            const string ServerUrl = "http://localhost:3541";
+
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync("api/Prisers").Result;
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        IEnumerable<Priser> priserData = response.Content.ReadAsAsync<IEnumerable<Priser>>().Result;
+                        return priserData.ToList();
+                    }
+                    return null;
+                }
+                catch { return null; }
+            }
+        }
     }
 }
