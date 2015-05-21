@@ -28,6 +28,7 @@ namespace VIKINGEdesign.Model
         /// </summary>
         public ObservableCollection<Kunde> Kunder { get; set; }
         public ObservableCollection<Billet> Billeter { get; set; }
+        public ObservableCollection<Priser> Priser { get; set; }
         
 
         /// <summary>
@@ -35,10 +36,12 @@ namespace VIKINGEdesign.Model
         /// </summary>
         private VikingeCatalogSingleton()
         {
-            Billeter = new ObservableCollection<Billet>();
-            LoadBilleterAsync();
             Kunder = new ObservableCollection<Kunde>();
             LoadKunderAsync();
+            Billeter = new ObservableCollection<Billet>();
+            LoadBilleterAsync();
+            Priser = new ObservableCollection<Priser>();
+            LoadPriserAsync();
         }
 
      
@@ -73,6 +76,21 @@ namespace VIKINGEdesign.Model
                 //Data til testformål
                 Billeter.Add(new Billet(1,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
                 Billeter.Add(new Billet(2,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+            }
+        }
+        public async void LoadPriserAsync()
+        {
+            var priser = await PersistencyService.LoadPriserFromJsonAsync();
+            if (priser != null)
+                foreach (var p in Priser)
+                {
+                    Priser.Add(p);
+                }
+            else
+            {
+                //Data til testformål
+                Priser.Add(new Priser(1, 1234, "1"));
+                Priser.Add(new Priser(2, 1234, "2"));
             }
         }
 
