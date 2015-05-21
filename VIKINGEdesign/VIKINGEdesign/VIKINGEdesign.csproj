@@ -125,9 +125,9 @@
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Converter\DateTimeConverter.cs" />
     <Compile Include="Handler\BilletHandler.cs" />
+    <Compile Include="Handler\PrisHandler.cs" />
     <Compile Include="Model\Billet.cs" />
     <Compile Include="Model\Kunde.cs" />
-    <Compile Include="Model\Pris.cs" />
     <Compile Include="Model\VikingeCatalogSingleton.cs" />
     <Compile Include="Model\Vikingeskib.cs" />
     <Compile Include="Persistency\PersistencyService.cs" />

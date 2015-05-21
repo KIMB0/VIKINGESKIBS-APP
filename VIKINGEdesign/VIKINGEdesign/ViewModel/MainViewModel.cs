@@ -33,7 +33,6 @@ namespace VIKINGEdesign.ViewModel
         
         public Billet Billet { get; set; }
         public Kunde Kunde { get; set; }
-        public Pris PrisKlassen { get; set; }
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
 
         //public static Vikingeskib SelectedVikingeskib { get; set; }
