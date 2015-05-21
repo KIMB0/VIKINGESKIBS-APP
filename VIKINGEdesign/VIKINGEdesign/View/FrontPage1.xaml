@@ -43,7 +43,7 @@
             </Grid.ColumnDefinitions>
             <Image HorizontalAlignment="Left" Height="130" Margin="47,0,0,0" VerticalAlignment="Top" Width="572" Source="ms-appx:///Assets/top.gif" Grid.ColumnSpan="2"/>
             <Image HorizontalAlignment="Left" Height="130" Margin="23,0,0,0" VerticalAlignment="Top" Width="252" Grid.ColumnSpan="2" Source="ms-appx:///Assets/Logo.gif"/>
-            <Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png"/>
+            <Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png" Tapped="Image_Tapped"/>
         </Grid>
         <Image HorizontalAlignment="Left" Height="374" Margin="55,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="552" Source="ms-appx:///Assets/Skib2.png"/>
         <DatePicker x:Name="DatoDatepicker" HorizontalAlignment="Left" Margin="181,522,0,0" Grid.Row="1" VerticalAlignment="Top" Date="{Binding DateTime, Mode=TwoWay}"/>

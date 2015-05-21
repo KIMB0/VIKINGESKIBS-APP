@@ -19,7 +19,7 @@ using VIKINGEdesign.View;
 
 namespace VIKINGEdesign
 {
-
+    
 
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
@@ -117,6 +117,10 @@ namespace VIKINGEdesign
 
         private void Button_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(InfoPage));
+        }
+
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
         }
     }
 
