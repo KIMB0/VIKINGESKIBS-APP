@@ -30,8 +30,10 @@ namespace VIKINGEdesign.ViewModel
         private string _navn;
         private string _telefonNr;
 
+        
         public Billet Billet { get; set; }
         public Kunde Kunde { get; set; }
+        public Pris PrisKlassen { get; set; }
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
 
         //public static Vikingeskib SelectedVikingeskib { get; set; }
@@ -69,6 +71,7 @@ namespace VIKINGEdesign.ViewModel
         {
             get { return _kundeId; }
             set { _kundeId = value; OnPropertyChanged(); }
+           
         }
 
         public int AntalStuderende
@@ -85,6 +88,7 @@ namespace VIKINGEdesign.ViewModel
 
         public int AntalVoksne
         {
+ 
             get { return _antalVoksne; }
             set { _antalVoksne = value; OnPropertyChanged(); }
         }
@@ -126,6 +130,9 @@ namespace VIKINGEdesign.ViewModel
             set { _telefonNr = value; OnPropertyChanged(); }
         }
 
+        
+        
+
         #region PropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -138,6 +145,7 @@ namespace VIKINGEdesign.ViewModel
         }
 
         #endregion
+
 
     }
 }
