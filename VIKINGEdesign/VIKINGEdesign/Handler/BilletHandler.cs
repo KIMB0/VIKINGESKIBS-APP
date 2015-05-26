@@ -11,14 +11,17 @@ namespace VIKINGEdesign.Handler
     class BilletHandler
     {
         public MainViewModel MainViewModel { get; set; }
+        public PrisHandler PrisHandler { get; set; }
 
-        public BilletHandler(MainViewModel mainViewModel)
+        public BilletHandler(MainViewModel mainViewModel, PrisHandler prisHandler)
         {
             MainViewModel = mainViewModel;
+            PrisHandler = prisHandler;
         }
 
         public void CreateBillet()
         {
+            PrisHandler.TotalPris();
             MainViewModel.VikingeCatalogSingleton.Add(MainViewModel.AntalBorn, MainViewModel.AntalStuderende, MainViewModel.AntalVoksne,DateTimeConverter.DateTimeOffset(MainViewModel.DateTime), MainViewModel.Pris, MainViewModel.Sejltur, MainViewModel.Email, MainViewModel.Navn, MainViewModel.TelefonNr);
         }
     }

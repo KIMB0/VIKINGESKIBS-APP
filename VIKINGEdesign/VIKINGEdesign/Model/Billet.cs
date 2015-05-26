@@ -17,10 +17,10 @@ namespace VIKINGEdesign.Model
         private int _antalStuderende;
         private int _antalVoksne;
         private DateTime _dateTime;
-        private double _pris;
+        private decimal _pris;
         private bool _sejltur;
 
-        public Billet(int kundeId,int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur)
+        public Billet(int kundeId,int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, decimal pris, bool sejltur)
         {
             _kundeId = kundeId;
             _antalBorn = antalBorn;
@@ -74,7 +74,7 @@ namespace VIKINGEdesign.Model
             set { _dateTime = value; }
         }
 
-        public double Pris
+        public decimal Pris
         {
             get { return _pris; }
             set { _pris = value; }

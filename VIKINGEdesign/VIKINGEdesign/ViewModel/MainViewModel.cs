@@ -24,7 +24,7 @@ namespace VIKINGEdesign.ViewModel
         private int _antalVoksne;
         //private DateTime _dateTime;
         private DateTimeOffset _dateTime = DateTimeOffset.Now;
-        private double _pris;
+        private decimal _pris;
         private bool _sejltur;
         private string _email;
         private string _navn;
@@ -37,6 +37,7 @@ namespace VIKINGEdesign.ViewModel
 
         //public static Vikingeskib SelectedVikingeskib { get; set; }
 
+        public Handler.PrisHandler PrisHandler { get; set; }
         public Handler.BilletHandler BilletHandler { get; set; }
 
         private ICommand _createBilletCommand;
@@ -55,8 +56,9 @@ namespace VIKINGEdesign.ViewModel
 
         public MainViewModel()
         {
-            BilletHandler = new BilletHandler(this);
             VikingeCatalogSingleton = Model.VikingeCatalogSingleton.Instance;
+            PrisHandler = new PrisHandler(this);
+            BilletHandler = new BilletHandler(this,PrisHandler);
         }
 
 
@@ -105,7 +107,7 @@ namespace VIKINGEdesign.ViewModel
             set { _dateTime = value; OnPropertyChanged(); }
         }
 
-        public double Pris
+        public decimal Pris
         {
             get { return _pris; }
             set { _pris = value; OnPropertyChanged(); }

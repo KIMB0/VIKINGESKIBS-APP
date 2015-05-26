@@ -20,7 +20,7 @@ namespace VIKINGEdesign.Model
         /// </summary>
         public static VikingeCatalogSingleton Instance
         {
-            get { return _instance ?? (_instance = new VikingeCatalogSingleton()); }
+            get { return _instance; }
         }
 
         /// <summary>
@@ -74,15 +74,15 @@ namespace VIKINGEdesign.Model
             else
             {
                 //Data til testformål
-                Billeter.Add(new Billet(1,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
-                Billeter.Add(new Billet(2,123456789,123456789,123456789,new DateTime(2015,05,14), 12.34,false));
+                Billeter.Add(new Billet(1,123456789,123456789,123456789,new DateTime(2015,05,14), 1234,false));
+                Billeter.Add(new Billet(2,123456789,123456789,123456789,new DateTime(2015,05,14), 1234,false));
             }
         }
         public async void LoadPriserAsync()
         {
             var priser = await PersistencyService.LoadPriserFromJsonAsync();
             if (priser != null)
-                foreach (var p in Priser)
+                foreach (var p in priser)
                 {
                     Priser.Add(p);
                 }
@@ -105,7 +105,7 @@ namespace VIKINGEdesign.Model
         /// <param name="dateTime"></param>
         /// <param name="pris"></param>
         /// <param name="sejltur"></param>
-        public void Add(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, double pris, bool sejltur, string email, string navn, string telefonNr)
+        public void Add(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, decimal pris, bool sejltur, string email, string navn, string telefonNr)
         {
             Kunde newKunde = new Kunde(email, navn, telefonNr);
             Kunder.Add(newKunde);
