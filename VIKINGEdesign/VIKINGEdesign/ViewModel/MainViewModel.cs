@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Eventmaker.Common;
 using VIKINGEdesign.Annotations;
 using Windows.UI.Xaml;
 using VIKINGEdesign.Common;
@@ -34,6 +35,8 @@ namespace VIKINGEdesign.ViewModel
         public Billet Billet { get; set; }
         public Kunde Kunde { get; set; }
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
+        public Handler.SkibeHandler SkibeHandler { get; set; }
+        public static Skibe SelectedSkibe { get; set; }
 
         //public static Vikingeskib SelectedVikingeskib { get; set; }
 
@@ -51,6 +54,12 @@ namespace VIKINGEdesign.ViewModel
                 return _createBilletCommand;
             }
             set { _createBilletCommand = value; }
+        }
+        private ICommand _selectSkibeCommand;
+        public ICommand SelectSkibeCommand
+        {
+            get { return _selectSkibeCommand ?? (_selectSkibeCommand = new RelayArgCommand<Skibe>(s => SkibeHandler.SetSelectedSkibe(s))); }
+            set { _selectSkibeCommand = value; }
         }
         
 

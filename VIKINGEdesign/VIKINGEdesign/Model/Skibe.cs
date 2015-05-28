@@ -43,7 +43,11 @@ namespace VIKINGEdesign.Model {
             set { _billede = value; }
         }
 
-      
+        public override string ToString()
+        {
+            return string.Format(_navn);
+        }
+
         #region
 
         public event PropertyChangedEventHandler PropertyChanged;

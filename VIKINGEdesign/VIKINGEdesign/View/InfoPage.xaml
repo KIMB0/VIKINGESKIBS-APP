@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:VIKINGEdesign.ViewModel"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Name="pageRoot"
     x:Class="VIKINGEdesign.View.InfoPage"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
@@ -21,57 +22,63 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Background="#FFD8D8D8">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="57*"/>
-            <ColumnDefinition Width="350*"/>
-            <ColumnDefinition Width="47*"/>
-            <ColumnDefinition Width="355*"/>
-            <ColumnDefinition Width="409*"/>
-            <ColumnDefinition Width="148*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="140"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="267*"/>
-            <RowDefinition Height="28*"/>
-        </Grid.RowDefinitions>
+	<Grid Background="#FFD8D8D8">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="57*"/>
+			<ColumnDefinition Width="350*"/>
+			<ColumnDefinition Width="47*"/>
+			<ColumnDefinition Width="355*"/>
+			<ColumnDefinition Width="409*"/>
+			<ColumnDefinition Width="148*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.ChildrenTransitions>
+			<TransitionCollection>
+				<EntranceThemeTransition/>
+			</TransitionCollection>
+		</Grid.ChildrenTransitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="140"/>
+			<RowDefinition Height="19*"/>
+			<RowDefinition Height="267*"/>
+			<RowDefinition Height="28*"/>
+		</Grid.RowDefinitions>
 
-        <!-- Back button and page title -->
-        <Grid.DataContext>
-            <ViewModel:MainViewModel/>
-        </Grid.DataContext>
-        <Grid Grid.ColumnSpan="6">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid Background="#FF4F4D40" Margin="0,0,0,10" Grid.ColumnSpan="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Image HorizontalAlignment="Left" Height="130" Margin="47,0,0,0" VerticalAlignment="Top" Width="572" Source="ms-appx:///Assets/top.gif" Grid.ColumnSpan="2"/>
-                <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" 
+		<!-- Back button and page title -->
+		<Grid.DataContext>
+			<ViewModel:MainViewModel/>
+		</Grid.DataContext>
+		<Grid Grid.ColumnSpan="6">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="120"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Grid Background="#FF4F4D40" Margin="0,0,0,10" Grid.ColumnSpan="2">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="120"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Image HorizontalAlignment="Left" Height="130" Margin="47,0,0,0" VerticalAlignment="Top" Width="572" Source="ms-appx:///Assets/top.gif" Grid.ColumnSpan="2"/>
+				<TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" 
 					IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="0,0,150,130" Text="Hej" Foreground="White"/>
-                <Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png"/>
-                <Button x:Name="backButton" Margin="47,52,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+				<Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png"/>
+				<Button x:Name="backButton" Margin="47,52,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
 					Style="{StaticResource NavigationBackButtonNormalStyle}"
 					VerticalAlignment="Top"
 					AutomationProperties.Name="Back"
 					AutomationProperties.AutomationId="BackButton"
 					AutomationProperties.ItemType="Navigation Button"/>
-            </Grid>
-        </Grid>
-        <ListBox HorizontalAlignment="Left" Height="538" Margin="0,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Grid.Column="1" Grid.RowSpan="3" IsTabStop="False" ItemsSource="{Binding VikingeCatalogSingleton.Skibe}" SelectedItem="{Binding VikingeCatalogSingleton.Skibe[0].Navn}"/>
-        <Image Grid.Column="3" HorizontalAlignment="Left" Height="192" Margin="1.269,38,0,0" Grid.Row="2" VerticalAlignment="Top" Width="351"/>
-        <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="10,248,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="276" Width="335"/>
-        <TextBlock Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="514" Width="389"/>
+			</Grid>
+		</Grid>
+		<ListBox HorizontalAlignment="Left" Height="538" Margin="0,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Grid.Column="1" Grid.RowSpan="3" IsTabStop="False" ItemsSource="{Binding VikingeCatalogSingleton.Skibe}">
+			<Interactivity:Interaction.Behaviors>
+				<Core:EventTriggerBehavior EventName="SelectionChanged">
+                    <Core:InvokeCommandAction Command="{Binding SelectSkibeCommand}" CommandParameter="{Binding SelectedItem, ElementName=listView}"/>
+				</Core:EventTriggerBehavior>
+			</Interactivity:Interaction.Behaviors>
+		</ListBox>
+		<Image Grid.Column="3" HorizontalAlignment="Left" Height="192" Margin="1.269,38,0,0" Grid.Row="2" VerticalAlignment="Top" Width="351"/>
+		<TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="10,248,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="276" Width="335"/>
+		<TextBlock Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="514" Width="389"/>
 
-    </Grid>
+	</Grid>
 </Page>
