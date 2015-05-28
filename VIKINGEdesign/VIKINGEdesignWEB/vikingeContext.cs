@@ -8,8 +8,9 @@ namespace VIKINGEdesignWEB
     public partial class VikingeContext : DbContext
     {
         public VikingeContext()
-            : base("name=VikingeContext")
+            : base("name=VikingeContext2")
         {
+            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Billeter> Billeters { get; set; }

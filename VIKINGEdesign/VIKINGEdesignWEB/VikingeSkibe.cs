@@ -16,5 +16,14 @@ namespace VIKINGEdesignWEB
         public string Name { get; set; }
 
         public int AntalPladser { get; set; }
+
+        [Required]
+        public string Beskrivelse { get; set; }
+
+        [Required]
+        public string YderligereInformationer { get; set; }
+
+        [Required]
+        public string Billede { get; set; }
     }
 }
