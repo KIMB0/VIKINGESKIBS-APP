@@ -30,7 +30,10 @@ CREATE TABLE Billeter(
 CREATE TABLE VikingeSkibe (
      VikingeSkibeID  int  NOT NULL PRIMARY KEY IDENTITY(1,1),
      Name      NvarChar(30)      NOT NULL,
-     AntalPladser   int   NOT NULL
+     AntalPladser   int   NOT NULL,
+	 Beskrivelse NvarChar(MAX)	NOT NULL,
+	 YderligereInformationer NvarChar(MAX) NOT NULL,
+	 Billede NvarChar(MAX) NOT NULL
 );
 
 GO
