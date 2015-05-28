@@ -142,7 +142,7 @@ namespace VIKINGEdesign.Persistency
             }
         }
 
-        public static async Task<List<Skibe>> LoadSkibeFromJsonAsync() {
+        public static async Task<List<Vikingeskib>> LoadSkibeFromJsonAsync() {
             const string ServerUrl = "http://localhost:3541";
 
             HttpClientHandler handler = new HttpClientHandler();
@@ -156,7 +156,7 @@ namespace VIKINGEdesign.Persistency
                     var response = client.GetAsync("api/Skibes").Result;
 
                     if (response.IsSuccessStatusCode) {
-                        IEnumerable<Skibe> skibeData = response.Content.ReadAsAsync<IEnumerable<Skibe>>().Result;
+                        IEnumerable<Vikingeskib> skibeData = response.Content.ReadAsAsync<IEnumerable<Vikingeskib>>().Result;
                         return skibeData.ToList();
                     }
                     return null;

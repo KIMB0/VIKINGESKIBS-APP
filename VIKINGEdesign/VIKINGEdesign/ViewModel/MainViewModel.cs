@@ -36,7 +36,7 @@ namespace VIKINGEdesign.ViewModel
         public Kunde Kunde { get; set; }
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
         public Handler.SkibeHandler SkibeHandler { get; set; }
-        public static Skibe SelectedSkibe { get; set; }
+        public static Vikingeskib SelectedSkibe { get; set; }
 
         //public static Vikingeskib SelectedVikingeskib { get; set; }
 
@@ -58,7 +58,7 @@ namespace VIKINGEdesign.ViewModel
         private ICommand _selectSkibeCommand;
         public ICommand SelectSkibeCommand
         {
-            get { return _selectSkibeCommand ?? (_selectSkibeCommand = new RelayArgCommand<Skibe>(s => SkibeHandler.SetSelectedSkibe(s))); }
+            get { return _selectSkibeCommand ?? (_selectSkibeCommand = new RelayArgCommand<Vikingeskib>(s => SkibeHandler.SetSelectedSkibe(s))); }
             set { _selectSkibeCommand = value; }
         }
         

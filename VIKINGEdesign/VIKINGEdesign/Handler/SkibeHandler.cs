@@ -16,7 +16,7 @@ namespace VIKINGEdesign.Handler
         {
             MainViewModel = mainViewModel;
         }
-        public void SetSelectedSkibe(Skibe s)
+        public void SetSelectedSkibe(Vikingeskib s)
         {
             MainViewModel.SelectedSkibe = s;
         }

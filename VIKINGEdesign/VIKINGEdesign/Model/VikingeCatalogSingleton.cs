@@ -29,7 +29,7 @@ namespace VIKINGEdesign.Model
         public ObservableCollection<Kunde> Kunder { get; set; }
         public ObservableCollection<Billet> Billeter { get; set; }
         public ObservableCollection<Priser> Priser { get; set; }
-        public ObservableCollection<Skibe> Skibe { get; set; }
+        public ObservableCollection<Vikingeskib> VikingeSkib { get; set; }
 
         /// <summary>
         /// Udfylder Events med data.
@@ -42,7 +42,7 @@ namespace VIKINGEdesign.Model
             LoadBilleterAsync();
             Priser = new ObservableCollection<Priser>();
             LoadPriserAsync();
-            Skibe = new ObservableCollection<Skibe>();
+            VikingeSkib = new ObservableCollection<Vikingeskib>();
             LoadSkibeAsync();
 
         }
@@ -101,12 +101,11 @@ namespace VIKINGEdesign.Model
             var skibe = await PersistencyService.LoadSkibeFromJsonAsync();
             if (skibe != null)
                 foreach (var s in skibe) {
-                    Skibe.Add(s);
+                    VikingeSkib.Add(s);
                 }
             else {
                 //Data til testformål
-            Skibe.Add(new Skibe("lotte", "lotte", "brian", "lotte"));
-            Skibe.Add(new Skibe("lotte", "lotte", "brian", "lotte"));
+            VikingeSkib.Add(new Vikingeskib(1, "lotte", 33, "lottddse", "hje", "hej"));
 
             }
         }
