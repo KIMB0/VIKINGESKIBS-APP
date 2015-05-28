@@ -141,5 +141,29 @@ namespace VIKINGEdesign.Persistency
                 catch { return null; }
             }
         }
+
+        public static async Task<List<Skibe>> LoadSkibeFromJsonAsync() {
+            const string ServerUrl = "http://localhost:3541";
+
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler)) {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try {
+                    var response = client.GetAsync("api/Skibes").Result;
+
+                    if (response.IsSuccessStatusCode) {
+                        IEnumerable<Skibe> skibeData = response.Content.ReadAsAsync<IEnumerable<Skibe>>().Result;
+                        return skibeData.ToList();
+                    }
+                    return null;
+                }
+                catch { return null; }
+            }
+        }
+
     }
 }

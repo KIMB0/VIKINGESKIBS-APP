@@ -1,13 +1,14 @@
 ﻿<Page
-    x:Name="pageRoot"
-    x:Class="VIKINGEdesign.View.InfoPage"
-    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:VIKINGEdesign.View"
     xmlns:common="using:VIKINGEdesign.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:VIKINGEdesign.ViewModel"
+    x:Name="pageRoot"
+    x:Class="VIKINGEdesign.View.InfoPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -40,6 +41,11 @@
             <RowDefinition Height="267*"/>
             <RowDefinition Height="28*"/>
         </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid.DataContext>
+            <ViewModel:MainViewModel/>
+        </Grid.DataContext>
         <Grid Grid.ColumnSpan="6">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
@@ -52,21 +58,20 @@
                 </Grid.ColumnDefinitions>
                 <Image HorizontalAlignment="Left" Height="130" Margin="47,0,0,0" VerticalAlignment="Top" Width="572" Source="ms-appx:///Assets/top.gif" Grid.ColumnSpan="2"/>
                 <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" 
-        			IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="0,0,150,130" Text="Hej" Foreground="White"/>
+					IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="0,0,150,130" Text="Hej" Foreground="White"/>
                 <Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png"/>
                 <Button x:Name="backButton" Margin="47,52,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
-        			Style="{StaticResource NavigationBackButtonNormalStyle}"
-        			VerticalAlignment="Top"
-        			AutomationProperties.Name="Back"
-        			AutomationProperties.AutomationId="BackButton"
-        			AutomationProperties.ItemType="Navigation Button"/>
+					Style="{StaticResource NavigationBackButtonNormalStyle}"
+					VerticalAlignment="Top"
+					AutomationProperties.Name="Back"
+					AutomationProperties.AutomationId="BackButton"
+					AutomationProperties.ItemType="Navigation Button"/>
             </Grid>
         </Grid>
-        <ListBox HorizontalAlignment="Left" Height="538" Margin="0,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Grid.Column="1" Grid.RowSpan="3"/>
+        <ListBox HorizontalAlignment="Left" Height="538" Margin="0,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Grid.Column="1" Grid.RowSpan="3" IsTabStop="False" ItemsSource="{Binding VikingeCatalogSingleton.Skibe}" SelectedItem="{Binding VikingeCatalogSingleton.Skibe[0].Navn}"/>
         <Image Grid.Column="3" HorizontalAlignment="Left" Height="192" Margin="1.269,38,0,0" Grid.Row="2" VerticalAlignment="Top" Width="351"/>
         <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="10,248,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="276" Width="335"/>
         <TextBlock Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="514" Width="389"/>
 
-        <!-- Back button and page title -->
     </Grid>
 </Page>
