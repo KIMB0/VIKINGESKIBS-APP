@@ -36,7 +36,12 @@ namespace VIKINGEdesign.ViewModel
         public Kunde Kunde { get; set; }
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
         public Handler.SkibeHandler SkibeHandler { get; set; }
-        public static Vikingeskib SelectedSkibe { get; set; }
+
+        public Vikingeskibe SelectedSkibe
+        {
+            get { return _selectedSkibe; }
+            set { _selectedSkibe = value; OnPropertyChanged(); }
+        }
 
         //public static Vikingeskib SelectedVikingeskib { get; set; }
 
@@ -56,9 +61,11 @@ namespace VIKINGEdesign.ViewModel
             set { _createBilletCommand = value; }
         }
         private ICommand _selectSkibeCommand;
+        private Vikingeskibe _selectedSkibe;
+
         public ICommand SelectSkibeCommand
         {
-            get { return _selectSkibeCommand ?? (_selectSkibeCommand = new RelayArgCommand<Vikingeskib>(s => SkibeHandler.SetSelectedSkibe(s))); }
+            get { return _selectSkibeCommand ?? (_selectSkibeCommand = new RelayArgCommand<Vikingeskibe>(s => SkibeHandler.SetSelectedSkibe(s))); }
             set { _selectSkibeCommand = value; }
         }
         
@@ -68,6 +75,7 @@ namespace VIKINGEdesign.ViewModel
             VikingeCatalogSingleton = Model.VikingeCatalogSingleton.Instance;
             PrisHandler = new PrisHandler(this);
             BilletHandler = new BilletHandler(this,PrisHandler);
+            SkibeHandler = new SkibeHandler(this);
         }
 
 

@@ -9,7 +9,7 @@ using VIKINGEdesign.Annotations;
 
 namespace VIKINGEdesign.Model
 {
-    class Vikingeskib : INotifyPropertyChanged
+    class Vikingeskibe : INotifyPropertyChanged
     {
         private int _skibsId;
         private string _navn;
@@ -18,7 +18,7 @@ namespace VIKINGEdesign.Model
         private string _informationer;
         private string _billede;
 
-        public Vikingeskib(int skibsId, string navn, int pladser, string beskrivelse, string informationer, string billede)
+        public Vikingeskibe(int skibsId, string navn, int pladser, string beskrivelse, string informationer, string billede)
         {
             _skibsId = skibsId;
             _navn = navn;
@@ -31,37 +31,37 @@ namespace VIKINGEdesign.Model
         public int VikingeSkibeID
         {
             get { return _skibsId; }
-            set { _skibsId = value; }
+            set { _skibsId = value; OnPropertyChanged(); }
         }
 
         public string Name
         {
             get { return _navn; }
-            set { _navn = value; }
+            set { _navn = value; OnPropertyChanged(); }
         }
 
         public int AntalPladser
         {
             get { return _pladser; }
-            set { _pladser = value; }
+            set { _pladser = value; OnPropertyChanged(); }
         }
 
         public string Beskrivelse
         {
             get { return _beskrivelse; }
-            set { _beskrivelse = value; }
+            set { _beskrivelse = value; OnPropertyChanged(); }
         }
 
         public string YderligereInformationer
         {
             get { return _informationer; }
-            set { _informationer = value; }
+            set { _informationer = value; OnPropertyChanged(); }
         }
 
         public string Billede
         {
             get { return _billede; }
-            set { _billede = value; }
+            set { _billede = value; OnPropertyChanged(); }
         }
         public override string ToString()
         {

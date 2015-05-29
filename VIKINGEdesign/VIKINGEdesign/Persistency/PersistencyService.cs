@@ -142,7 +142,7 @@ namespace VIKINGEdesign.Persistency
             }
         }
 
-        public static async Task<List<Vikingeskib>> LoadSkibeFromJsonAsync() {
+        public static async Task<List<Vikingeskibe>> LoadSkibeFromJsonAsync() {
             const string ServerUrl = "http://localhost:3541";
 
             HttpClientHandler handler = new HttpClientHandler();
@@ -153,10 +153,10 @@ namespace VIKINGEdesign.Persistency
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 try {
-                    var response = client.GetAsync("api/Skibes").Result;
+                    var response = client.GetAsync("api/VikingeSkibes").Result;
 
                     if (response.IsSuccessStatusCode) {
-                        IEnumerable<Vikingeskib> skibeData = response.Content.ReadAsAsync<IEnumerable<Vikingeskib>>().Result;
+                        IEnumerable<Vikingeskibe> skibeData = response.Content.ReadAsAsync<IEnumerable<Vikingeskibe>>().Result;
                         return skibeData.ToList();
                     }
                     return null;

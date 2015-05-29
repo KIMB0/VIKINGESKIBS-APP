@@ -29,7 +29,7 @@ namespace VIKINGEdesign.Model
         public ObservableCollection<Kunde> Kunder { get; set; }
         public ObservableCollection<Billet> Billeter { get; set; }
         public ObservableCollection<Priser> Priser { get; set; }
-        public ObservableCollection<Vikingeskib> VikingeSkib { get; set; }
+        public ObservableCollection<Vikingeskibe> VikingeSkib { get; set; }
 
         /// <summary>
         /// Udfylder Events med data.
@@ -42,7 +42,7 @@ namespace VIKINGEdesign.Model
             LoadBilleterAsync();
             Priser = new ObservableCollection<Priser>();
             LoadPriserAsync();
-            VikingeSkib = new ObservableCollection<Vikingeskib>();
+            VikingeSkib = new ObservableCollection<Vikingeskibe>();
             LoadSkibeAsync();
 
         }
@@ -105,7 +105,7 @@ namespace VIKINGEdesign.Model
                 }
             else {
                 //Data til testformål
-            VikingeSkib.Add(new Vikingeskib(1, "lotte", 33, "lottddse", "hje", "hej"));
+            VikingeSkib.Add(new Vikingeskibe(1, "lotte", 33, "lottddse", "hje", "hej"));
 
             }
         }

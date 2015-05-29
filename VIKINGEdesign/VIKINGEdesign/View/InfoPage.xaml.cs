@@ -93,5 +93,10 @@ namespace VIKINGEdesign.View {
         }
 
         #endregion
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            antalPladser.Visibility = Visibility.Visible;
+        }
     }
 }

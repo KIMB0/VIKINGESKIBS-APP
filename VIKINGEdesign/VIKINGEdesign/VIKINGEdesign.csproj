@@ -133,7 +133,7 @@
     <Compile Include="Model\Kunde.cs" />
     <Compile Include="Model\Priser.cs" />
     <Compile Include="Model\VikingeCatalogSingleton.cs" />
-    <Compile Include="Model\Vikingeskib.cs" />
+    <Compile Include="Model\Vikingeskibe.cs" />
     <Compile Include="Persistency\PersistencyService.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
@@ -191,7 +191,6 @@
     <Content Include="Scripts\npm.js" />
     <Content Include="SQLCreate0913.sql" />
     <Content Include="SQLInsert0913.sql" />
-    <Content Include="SQLInsert0914.sql" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
