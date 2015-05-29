@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="40f873af-ff2b-4e31-ba85-b79369f181e3"
   name="VIKINGESKIBSMUSEETdomain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -853,22 +853,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="abf58c85-1d9d-432d-9235-2219753f13e0"
-            name="MessageOccurrenceSpecification42">
-            <covered>
-              <lifelineMoniker
-                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
-                LastKnownName="Billeter ObservableCollection"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="9934f5d3-594a-4693-95e3-e1c53ed7926a"
             name="MessageOccurrenceSpecification41">
             <covered>
               <lifelineMoniker
                 Id="1471a3a6-f637-4dc2-acc7-8608de0e7a24"
                 LastKnownName=": Billethandler"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="abf58c85-1d9d-432d-9235-2219753f13e0"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
+                LastKnownName="Billeter ObservableCollection"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1129,16 +1129,6 @@
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="becf7244-933c-49d4-98b5-0e9f35e2ecca"
-            name="OperandOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
-                LastKnownName="BilletId"
-                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="4e7ff4a5-113e-40af-9109-b2047512437b"
             name="OperandOccurrenceSpecification7">
             <covered>
@@ -1155,6 +1145,16 @@
               <lifelineMoniker
                 Id="b4b12dc9-e013-4afb-a646-c47328600aa1"
                 LastKnownName="Billeter ObservableCollection"
+                LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="becf7244-933c-49d4-98b5-0e9f35e2ecca"
+            name="OperandOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="b3c84e79-d4e2-44e0-8cc8-686ae78c4b97"
+                LastKnownName="BilletId"
                 LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1680,6 +1680,70 @@
       <executionEvent
         Id="45fca434-286f-4560-ac23-e36fcdafd484"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="76f426fc-1446-4b5f-8e48-e330681753b5"
+        name="Kunde"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f62bd164-8297-4e08-9988-fd4688276a6f"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Bestiller billet"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c5ecdfbf-d9ce-4ad5-897a-2650aaf4d4f9"
+              LastKnownName="Bestiller billet"
+              LastKnownLocation="VIKINGESKIBSMUSEETdomain.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8ff569d-c23a-4b19-8ab7-39c6440d5e58"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17821e43-2788-4406-a530-9f6fc654b830"
+                  name="Bestiller billet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5ecdfbf-d9ce-4ad5-897a-2650aaf4d4f9"
+        name="Bestiller billet"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2ed5a437-5aa1-4388-b4ac-d516f7e01cde"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

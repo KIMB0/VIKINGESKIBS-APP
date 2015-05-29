@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5bbd4c0c-4121-42d2-9d71-eb101bd7380b" name="UMLUseCaseDiagram1" linkedPackageId="0fe15ae3-3da7-4f8d-8f31-2bb4267752cb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="ed7d51cf-b283-4503-b87e-095e0f0dc611">
+      <profileInstance Id="9995d9ef-b29d-4f4a-b548-f99aba06ebb3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="af4cbe47-ab0b-4510-a9c6-6731f44492c9">
+      <profileInstance Id="2ec15544-c86e-4b4d-900e-1176c36af4f7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="be561938-6606-4ffb-90b1-88063887910d" name="Kunde" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76f426fc-1446-4b5f-8e48-e330681753b5" />
+        <targetEnds>
+          <association Id="c0b2bc19-ee32-41a0-af62-5e93eb38379e" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Bestiller billet" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7bb1dc9e-d7d3-44e0-a97c-d37821fe7811" LastKnownName="Bestiller billet" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be4690b6-9e5c-4f20-94c6-ecab4fdf9260" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a8ff569d-c23a-4b19-8ab7-39c6440d5e58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4525611c-40c7-4a34-8062-cab423cf05e1" name="Bestiller billet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17821e43-2788-4406-a530-9f6fc654b830" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f62bd164-8297-4e08-9988-fd4688276a6f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7bb1dc9e-d7d3-44e0-a97c-d37821fe7811" name="Bestiller billet" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5ecdfbf-d9ce-4ad5-897a-2650aaf4d4f9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0fe15ae3-3da7-4f8d-8f31-2bb4267752cb" name="VIKINGESKIBSMUSEETdomain">
+    <elementDefinition Id="40f873af-ff2b-4e31-ba85-b79369f181e3" />
+  </package>
+</useCaseModelRoot>
