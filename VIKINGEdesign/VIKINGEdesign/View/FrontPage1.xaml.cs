@@ -122,6 +122,11 @@ namespace VIKINGEdesign
         private void Image_Tapped(object sender, TappedRoutedEventArgs e)
         {
         }
+
+        private void BestilButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+
+        }
     }
 
 }
