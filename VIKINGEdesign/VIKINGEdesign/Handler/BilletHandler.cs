@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -84,7 +85,7 @@ namespace VIKINGEdesign.Handler
                     {
                         dialog.Content += "\nStuderende: " + MainViewModel.AntalStuderende;
                     }
-                    dialog.Content += "\nDato: " + DateTimeConverter.DateTimeOffset(MainViewModel.DateTime).ToString("dd/MM/yyyy") + "\nPris: " + MainViewModel.Pris;
+                    dialog.Content += "\nDato: " + DateTimeConverter.DateTimeOffset(MainViewModel.DateTime).ToString("dd/MM/yyyy") + "\nPris: " + Math.Round(MainViewModel.Pris, 2).ToString("N", new CultureInfo("da-DK")) + " kr.";
                 }
                 if (dialog.Content != "")
                 {
