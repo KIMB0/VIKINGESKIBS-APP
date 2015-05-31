@@ -60,6 +60,31 @@ namespace VIKINGEdesign.Handler
                     )
                 {
                     MainViewModel.VikingeCatalogSingleton.Add(MainViewModel.AntalBorn, MainViewModel.AntalStuderende, MainViewModel.AntalVoksne, DateTimeConverter.DateTimeOffset(MainViewModel.DateTime), MainViewModel.Pris, MainViewModel.Sejltur, MainViewModel.Email, MainViewModel.Navn, MainViewModel.TelefonNr);
+                    dialog.Content += "Din billet er bestilt: \nNavn: " + MainViewModel.Navn + "\nEmail: " + MainViewModel.Email + "\nTelefon nummer: " + MainViewModel.TelefonNr;
+                    switch (MainViewModel.Sejltur)
+                    {
+                        case true:
+                            dialog.Content += "\nSejl tur: Ja";
+                            break;
+                        case false:
+                            dialog.Content += "\nSejl tur: Nej";
+                            break;
+                        default:
+                            break;
+                    }
+                    if (MainViewModel.AntalVoksne != 0)
+                    {
+                        dialog.Content += "\nVoksne: " + MainViewModel.AntalVoksne;
+                    }
+                    if (MainViewModel.AntalBorn != 0)
+                    {
+                        dialog.Content += "\nBørn: " + MainViewModel.AntalBorn;
+                    }
+                    if (MainViewModel.AntalStuderende != 0)
+                    {
+                        dialog.Content += "\nStuderende: " + MainViewModel.AntalStuderende;
+                    }
+                    dialog.Content += "\nDato: " + DateTimeConverter.DateTimeOffset(MainViewModel.DateTime).ToString("dd/MM/yyyy") + "\nPris: " + MainViewModel.Pris;
                 }
                 if (dialog.Content != "")
                 {
