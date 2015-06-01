@@ -10,30 +10,20 @@ namespace VIKINGEdesign.Model
 {
     class VikingeCatalogSingleton
     {
-        /// <summary>
-        /// Laver en instance af singleton.
-        /// </summary>
+ 
         private static VikingeCatalogSingleton _instance = new VikingeCatalogSingleton();
 
-        /// <summary>
-        /// Under søger om der en en instance af singleton hvis der ikke er laver den en.
-        /// </summary>
         public static VikingeCatalogSingleton Instance
         {
             get { return _instance; }
         }
 
-        /// <summary>
-        /// Navn giver en instance af classen ObservableCollection Events og laver den public.
-        /// </summary>
         public ObservableCollection<Kunde> Kunder { get; set; }
         public ObservableCollection<Billet> Billeter { get; set; }
         public ObservableCollection<Priser> Priser { get; set; }
         public ObservableCollection<Vikingeskibe> VikingeSkib { get; set; }
 
-        /// <summary>
-        /// Udfylder Events med data.
-        /// </summary>
+      
         private VikingeCatalogSingleton()
         {
             Kunder = new ObservableCollection<Kunde>();
@@ -49,7 +39,7 @@ namespace VIKINGEdesign.Model
 
      
         /// <summary>
-        /// Loader data fra databasen
+        /// LoadKunderAsync loader data fra vores database tabel "kunder". 
         /// </summary>
         public async void LoadKunderAsync()
         {
@@ -66,6 +56,11 @@ namespace VIKINGEdesign.Model
                 Kunder.Add(new Kunde("Email2","Navn2","12345678"));
             }
         }
+
+        /// <summary>
+        /// LoadBilleterAsync loader data fra vores database tabel "Billeter". 
+        /// </summary>
+
         public async void LoadBilleterAsync()
         {
             var billeter = await PersistencyService.LoadBilleterFromJsonAsync();
@@ -81,6 +76,10 @@ namespace VIKINGEdesign.Model
                 Billeter.Add(new Billet(2,123456789,123456789,123456789,new DateTime(2015,05,14), 1234,false));
             }
         }
+
+        /// <summary>
+        /// LoadPriserAsync loader data fra vores database tabel "Priser".
+        /// </summary>
         public async void LoadPriserAsync()
         {
             var priser = await PersistencyService.LoadPriserFromJsonAsync();
@@ -97,6 +96,10 @@ namespace VIKINGEdesign.Model
             }
         }
 
+        /// <summary>
+        /// LoadSkibeAsync loader data fra vores database tabel "Skibe". 
+        /// </summary>
+
         public async void LoadSkibeAsync() {
             var skibe = await PersistencyService.LoadSkibeFromJsonAsync();
             if (skibe != null)
@@ -111,7 +114,7 @@ namespace VIKINGEdesign.Model
         }
 
         /// <summary>
-        /// Gemmer data i databasen.
+        /// Her bliver vores ønskede data gemt i vores database. 
         /// </summary>
         /// <param name="billetId"></param>
         /// <param name="kundeId"></param>
