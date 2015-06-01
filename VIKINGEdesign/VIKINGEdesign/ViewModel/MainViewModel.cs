@@ -76,7 +76,8 @@ namespace VIKINGEdesign.ViewModel
         }
         
 /// <summary>
-/// Constructoren opretter instancer af 3 typer objekter, herunder PrisHandler, BilletHandler, Skibehandler. 
+/// Constructoren opretter instancer af 3 typer objekter, herunder PrisHandler, BilletHandler, Skibehandler.
+/// VikingsCatalogSingleton instancen bliver sat lig med objektet af samme type i denne klasse. 
 /// </summary>
         public MainViewModel()
         {
