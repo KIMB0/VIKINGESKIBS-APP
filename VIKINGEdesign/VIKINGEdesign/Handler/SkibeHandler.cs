@@ -12,10 +12,20 @@ namespace VIKINGEdesign.Handler
     {
         public MainViewModel MainViewModel { get; set; }
 
+      /// <summary>
+      ///  I denne parametre bliver der oprettet en instans af MainViewModel. 
+      /// </summary>
+      /// <param name="mainViewModel"></param>
         public SkibeHandler(MainViewModel mainViewModel)
         {
             MainViewModel = mainViewModel;
         }
+
+        /// <summary>
+        ///  Denne tager input af typen Vikingeskibe og sætter det li med selectedSkibe.
+        /// </summary>
+        /// <param name="s"></param>
+
         public void SetSelectedSkibe(Vikingeskibe s)
         {
             MainViewModel.SelectedSkibe = s;
