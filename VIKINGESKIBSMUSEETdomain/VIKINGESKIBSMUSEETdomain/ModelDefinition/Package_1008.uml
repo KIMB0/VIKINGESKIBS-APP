@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="268b98f3-5d40-4380-afe5-0b3b8b6fa5fe"
   name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -281,7 +281,7 @@
     <packageHasNamedElement>
       <class
         Id="506767e7-27bb-43fd-b814-5dd578f7ac92"
-        name="SingleTonViewModel"
+        name="VikingeCatalogSingleTon"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -331,6 +331,110 @@
                   <upperValueInternal>
                     <literalString
                       Id="9dc5cd59-ae3e-4990-88e1-5b236f0517c8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="85f992d3-7ac4-4d5b-b9e5-1f69dad319ec"
+            isDerived="false"
+            sourceEndRoleName="VikingeCatalogSingleTon"
+            targetEndRoleName="Kunde"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="40ff414b-7b33-4e2a-9395-c234d064a7e7"
+              LastKnownName="Kunde"
+              LastKnownLocation="Package_1008.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3060d52-2322-4b3e-96f7-26878ef13d49"
+                  name="VikingeCatalogSingleTon"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7fac880c-54f2-4093-9d46-8da5c2f5b58f"
+                  name="Kunde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a9154253-3377-422c-978b-4571352cfac1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="73e87782-610c-4800-8f78-c4e667821686"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4ef3d0fd-9d82-4b72-8975-2ebab062dc61"
+            isDerived="false"
+            sourceEndRoleName="VikingeCatalogSingleTon"
+            targetEndRoleName="Billet"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="857c875b-e5fb-429b-a82b-29e440470949"
+              LastKnownName="Billet"
+              LastKnownLocation="Package_1008.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ccaaac7-f54f-47c5-8784-700b47b02f07"
+                  name="VikingeCatalogSingleTon"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d95768eb-4a10-4f4b-bacb-632b435370f1"
+                  name="Billet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="de31ad65-64ce-4fcc-8eee-0484a35cf1f3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="da98ab89-e5f0-4230-b0c6-9db95242cc52"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
