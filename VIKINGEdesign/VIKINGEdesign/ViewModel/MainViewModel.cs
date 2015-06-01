@@ -37,6 +37,9 @@ namespace VIKINGEdesign.ViewModel
         public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
         public Handler.SkibeHandler SkibeHandler { get; set; }
 
+        /// <summary>
+        /// Der bliver lavet et objekt af SelectedSkibe, som tager input "Vikingeskibe"
+        /// </summary>
         public Vikingeskibe SelectedSkibe
         {
             get { return _selectedSkibe; }
