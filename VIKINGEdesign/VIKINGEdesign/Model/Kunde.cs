@@ -12,7 +12,12 @@ namespace VIKINGEdesign.Model
         private string _email;
         private string _navn;
         private string _telefon;
-
+        /// <summary>
+        /// Constructoren tager 3 inputs og sætter dem lig med de properties der er i denne klasse
+        /// </summary>
+        /// <param name="email">Tager en string værdi som parameter</param>
+        /// <param name="navn">Tager en string værdi som parameter</param>
+        /// <param name="telefon">Tager en string værdi som parameter</param>
         public Kunde(string email, string navn, string telefon)
         {
             _email = email;

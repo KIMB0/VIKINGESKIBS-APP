@@ -19,7 +19,16 @@ namespace VIKINGEdesign.Model
         private DateTime _dateTime;
         private decimal _pris;
         private bool _sejltur;
-
+        /// <summary>
+        /// Constructoren tager 7 inputs og sætter dem lig med de properties der er i denne klasse
+        /// </summary>
+        /// <param name="kundeId">Tager en int værdi som parameter</param>
+        /// <param name="antalBorn">Tager en int værdi som parameter</param>
+        /// <param name="antalStuderende">Tager en int værdi som parameter</param>
+        /// <param name="antalVoksne">Tager en int værdi som parameter</param>
+        /// <param name="dateTime">Tager en DateTime værdi som parameter</param>
+        /// <param name="pris">Tager en decimal værdi som parameter</param>
+        /// <param name="sejltur">Tager en bool værdi som parameter</param>
         public Billet(int kundeId,int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, decimal pris, bool sejltur)
         {
             _kundeId = kundeId;

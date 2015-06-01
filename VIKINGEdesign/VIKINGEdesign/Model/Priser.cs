@@ -11,7 +11,12 @@ namespace VIKINGEdesign.Model
         private int _prisId;
         private decimal _pris;
         private string _gruppe;
-
+        /// <summary>
+        /// Constructoren tager 3 inputs og sætter dem lig med de properties der er i denne klasse
+        /// </summary>
+        /// <param name="prisId">Tager en int værdi som parameter</param>
+        /// <param name="pris">Tager en decimal værdi som parameter</param>
+        /// <param name="gruppe">Tager en string værdi som parameter</param>
         public Priser(int prisId, decimal pris, string gruppe)
         {
             _prisId = prisId;

@@ -11,13 +11,21 @@ namespace VIKINGEdesign.Handler
     class PrisHandler
     {
         private decimal _totalPris;
+        /// <summary>
+        /// Der bliver lavet et object af MainViewModel
+        /// </summary>
         public MainViewModel MainViewModel { get; set; }
-        //public VikingeCatalogSingleton VikingeCatalogSingleton { get; set; }
+        /// <summary>
+        /// Contructeren tager 1 input og sætter det lig med det object der er lavet i denne klasse
+        /// </summary>
+        /// <param name="mainViewModel">Tager et object af typen MainViewModel som parameter</param>
         public PrisHandler(MainViewModel mainViewModel)
         {
             MainViewModel = mainViewModel;
         }
-
+        /// <summary>
+        /// Methoden tager indtastede antal og ganger med prisen for den type fra DataBasen og så sætter den det lig med pris
+        /// </summary>
         public void TotalPris()
         {
             MainViewModel.Pris = MainViewModel.AntalBorn * MainViewModel.VikingeCatalogSingleton.Priser.ElementAt(2).Pris +

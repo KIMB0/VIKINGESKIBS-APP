@@ -13,15 +13,27 @@ namespace VIKINGEdesign.Handler
 {
     class BilletHandler
     {
+        /// <summary>
+        /// Der bliver lavet et object af MainViewModel
+        /// </summary>
         public MainViewModel MainViewModel { get; set; }
+        /// <summary>
+        /// Der bliver lavet et object af PrisHandler
+        /// </summary>
         public PrisHandler PrisHandler { get; set; }
-
+        /// <summary>
+        /// Contructeren tager 2 inputs og sætter dem lig med de 2 objecter der er lavet i denne klasse
+        /// </summary>
+        /// <param name="mainViewModel">Tager et object af typen MainViewModel som parameter</param>
+        /// <param name="prisHandler">Tager et object af typen PrisHandler som parameter</param>
         public BilletHandler(MainViewModel mainViewModel, PrisHandler prisHandler)
         {
             MainViewModel = mainViewModel;
             PrisHandler = prisHandler;
         }
-
+        /// <summary>
+        /// Methoden laver en billet ud af alle felter i formularen
+        /// </summary>
         public void CreateBillet()
         {
             MessageDialog dialog = new MessageDialog("");
@@ -29,11 +41,7 @@ namespace VIKINGEdesign.Handler
             Regex regexTelefonNr2 = new Regex(@"^\+45\d{8}$");
             Regex regexEmail = new Regex(@"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" + @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$");
             PrisHandler.TotalPris();
-            //if (MainViewModel.Navn.Length == 0)
-            //{
-            //    MessageDialog dialog = new MessageDialog("");
-            //    dialog.ShowAsync();
-            //}
+
             if (!string.IsNullOrEmpty(MainViewModel.Navn) && !string.IsNullOrEmpty(MainViewModel.Email) && !string.IsNullOrEmpty(MainViewModel.TelefonNr) &&
                 (MainViewModel.AntalBorn + MainViewModel.AntalStuderende + MainViewModel.AntalVoksne) >= 1)
             {

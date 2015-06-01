@@ -17,7 +17,15 @@ namespace VIKINGEdesign.Model
         private string _beskrivelse;
         private string _informationer;
         private string _billede;
-
+        /// <summary>
+        /// Constructoren tager 6 inputs og sætter dem lig med de properties der er i denne klasse
+        /// </summary>
+        /// <param name="skibsId">Tager en int værdi som parameter</param>
+        /// <param name="navn">Tager en string værdi som parameter</param>
+        /// <param name="pladser">Tager en int værdi som parameter</param>
+        /// <param name="beskrivelse">Tager en string værdi som parameter</param>
+        /// <param name="informationer">Tager en string værdi som parameter</param>
+        /// <param name="billede">Tager en string værdi som parameter</param>
         public Vikingeskibe(int skibsId, string navn, int pladser, string beskrivelse, string informationer, string billede)
         {
             _skibsId = skibsId;

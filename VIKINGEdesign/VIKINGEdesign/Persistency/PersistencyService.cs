@@ -14,9 +14,9 @@ namespace VIKINGEdesign.Persistency
         public static int ID;
 
         /// <summary>
-        /// Poster evented til databasen.
+        /// Methoden tager 1 input og gemmer det i DataBasen
         /// </summary>
-        /// <param name="newBillet"></param>
+        /// <param name="newBillet">Tager et object af typen Billet som parameter</param>
         public static async void SaveBilleterAsJsonAsync(Billet newBillet)
         {
             const string ServerUrl = "http://localhost:3541";
@@ -36,7 +36,10 @@ namespace VIKINGEdesign.Persistency
                 catch { }
             }
         }
-
+        /// <summary>
+        /// Methoden tager 1 input og gemmer det i DataBasen
+        /// </summary>
+        /// <param name="newKunde">Tager et object af typen Kunde som parameter</param>
         public static async void SaveKunderAsJsonAsync(Kunde newKunde)
         {
             const string ServerUrl = "http://localhost:3541";
@@ -59,9 +62,9 @@ namespace VIKINGEdesign.Persistency
         }
 
         /// <summary>
-        /// Getter data fra databasen.
+        /// Methoden loader billeter fra DataBasen
         /// </summary>
-        /// <returns></returns>
+        /// <returns>En liste af Billeter</returns>
         public static async Task<List<Billet>> LoadBilleterFromJsonAsync()
         {
             const string ServerUrl = "http://localhost:3541";
@@ -88,7 +91,10 @@ namespace VIKINGEdesign.Persistency
                 catch { return null; }
             }
         }
-
+        /// <summary>
+        /// Methoden loader kunder fra DataBasen
+        /// </summary>
+        /// <returns>En liste af Kunder</returns>
         public static async Task<List<Kunde>> LoadKunderFromJsonAsync()
         {
             const string ServerUrl = "http://localhost:3541";
@@ -115,6 +121,10 @@ namespace VIKINGEdesign.Persistency
                 catch { return null; }
             }
         }
+        /// <summary>
+        /// Methoden loader priser fra DataBasen
+        /// </summary>
+        /// <returns>En liste af Priser</returns>
         public static async Task<List<Priser>> LoadPriserFromJsonAsync()
         {
             const string ServerUrl = "http://localhost:3541";
@@ -141,7 +151,10 @@ namespace VIKINGEdesign.Persistency
                 catch { return null; }
             }
         }
-
+        /// <summary>
+        /// Methoden loader vikinge skibe fra DataBasen
+        /// </summary>
+        /// <returns>En liste af Vikingeskibe</returns>
         public static async Task<List<Vikingeskibe>> LoadSkibeFromJsonAsync() {
             const string ServerUrl = "http://localhost:3541";
 
