@@ -53,6 +53,9 @@ namespace VIKINGEdesign.ViewModel
 
         private ICommand _createBilletCommand;
 
+        /// <summary>
+        /// Denne metode opretter en billet. 
+        /// </summary>
         public ICommand CreateBilletCommand
         {
             get
@@ -72,7 +75,9 @@ namespace VIKINGEdesign.ViewModel
             set { _selectSkibeCommand = value; }
         }
         
-
+/// <summary>
+/// Constructoren opretter instancer af 3 typer objekter, herunder PrisHandler, BilletHandler, Skibehandler. 
+/// </summary>
         public MainViewModel()
         {
             VikingeCatalogSingleton = Model.VikingeCatalogSingleton.Instance;

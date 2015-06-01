@@ -13,11 +13,18 @@ namespace VIKINGEdesign.Model
  
         private static VikingeCatalogSingleton _instance = new VikingeCatalogSingleton();
 
+        /// <summary>
+        /// Her bliver returnet en instans af VikingeCatalaogSingleton.
+        /// </summary>
         public static VikingeCatalogSingleton Instance
         {
             get { return _instance; }
         }
 
+
+        /// <summary>
+        /// Her bliver der lavet 4 typer af objektet ObservableCollection.
+        /// </summary>
         public ObservableCollection<Kunde> Kunder { get; set; }
         public ObservableCollection<Billet> Billeter { get; set; }
         public ObservableCollection<Priser> Priser { get; set; }
