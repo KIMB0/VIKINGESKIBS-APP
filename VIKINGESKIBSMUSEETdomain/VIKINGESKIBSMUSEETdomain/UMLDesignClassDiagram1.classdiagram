@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="66bdc6cc-841e-4d66-95ef-20f373395bfb" name="UMLDesignClassDiagram1" linkedPackageId="41fe893f-753d-48da-aa60-e49ba0d62619" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="66bdc6cc-841e-4d66-95ef-20f373395bfb" name="UMLDesignClassDiagram1" linkedPackageId="41fe893f-753d-48da-aa60-e49ba0d62619" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="cf27907a-2d0a-46d9-a323-d75af2d5932e" name="View">
@@ -61,7 +61,7 @@
               <elementDefinition Id="f33ae015-f15a-4b8f-a76a-d3c1bd32fe21" />
               <targetEnds>
                 <association Id="a73cc93c-73d3-44d7-9d5a-c3b35e5612eb" isDerived="false" sourceEndRoleName="MainViewModel" targetEndRoleName="SingleTonViewModel" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="20415825-1cf0-46d6-bb30-b8d12c83871b" LastKnownName="SingleTonViewModel" />
+                  <classMoniker Id="20415825-1cf0-46d6-bb30-b8d12c83871b" LastKnownName="VikingeCatalogSingleTon" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="b2385549-8130-4936-aa6d-b4a0e19050c9" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -76,13 +76,44 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="cadd14fc-fffe-4dd7-ab51-19101fec724b" />
                 </association>
+                <association Id="929e9cc9-56b1-4b6c-aaa8-db3a4c809e59" isDerived="false" sourceEndRoleName="MainViewModel" targetEndRoleName="BilletHandler" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ee64382e-8413-4b45-bcfb-12a7d525223a" LastKnownName="BilletHandler" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="444e883c-353d-4640-bbc3-43a7fafcf49f" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="7937dc4e-9025-4a34-9fbc-ef94fe0d7bfa" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e7eb5a32-5dda-41a1-9fe3-a0f627191648" name="BilletHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0de64ba8-7891-4d40-ac9a-c819217db133" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="751c2f6d-f1f6-4802-9210-b94f4094bc21" />
+                </association>
               </targetEnds>
               <ownedAttributesInternal>
-                <property Id="4933ea47-e40e-4c64-b103-e98584c74c25" name="SingleTonViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="4933ea47-e40e-4c64-b103-e98584c74c25" name=".SingleTonViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="f48c5062-bff2-47a5-96fc-e60f2adb2eb5" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="eda208f4-17dd-4232-a60f-723816005010" LastKnownName="Instans" />
+                    <referencedTypeMoniker Id="6fc087fa-72a2-44fa-8000-2864a26e8738" LastKnownName="Instans" />
                   </type_NamedElement>
+                </property>
+                <property Id="682fc06d-0e9f-4780-a6dc-5ab29fe50a1d" name="KundeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cda8a8c6-d23b-4f70-99d9-4ba5f2cb0def" />
+                </property>
+                <property Id="edc8d229-b1c8-4647-8c20-57104ac54d50" name="BilletId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f4ba2f2-59c8-419d-a1b6-225f25d93215" />
+                </property>
+                <property Id="5ad73729-4e5a-4720-87b3-62c3db5fc78e" name="AntalBorn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ce5b873-b098-4617-97b0-ad4815223fc0" />
+                </property>
+                <property Id="92032099-c206-4cb5-b591-f6c9fe345eca" name="AntalStuderende" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fc57e42c-4b8d-44bf-a79a-33bc2762c170" />
+                </property>
+                <property Id="091d620f-0bf1-4a9c-9ad7-7ed801eae718" name="Osv..." isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6ebbe333-df7d-49a5-badf-e789ae4b6330" />
                 </property>
               </ownedAttributesInternal>
             </class>
@@ -90,6 +121,19 @@
           <packageHasNamedElement>
             <class Id="ee64382e-8413-4b45-bcfb-12a7d525223a" name="BilletHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="bd331aa3-03b1-498b-9c17-d197b4d85f9d" />
+              <ownedAttributesInternal>
+                <property Id="fe890aaf-f6d7-4752-8f39-6fad90a654ea" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52f12278-55a5-423a-b1aa-f07f7e3e9dc2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="93cf1126-c164-44dc-8814-bdc2370cf861" LastKnownName="MainViewModel" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="b2527611-3f8a-478e-b797-cff6d288a733" name="CreateBillet" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="edbec2d8-ab85-4543-bf41-aba1e59d8f2a" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>
@@ -194,7 +238,7 @@
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="20415825-1cf0-46d6-bb30-b8d12c83871b" name="SingleTonViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="20415825-1cf0-46d6-bb30-b8d12c83871b" name="VikingeCatalogSingleTon" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="506767e7-27bb-43fd-b814-5dd578f7ac92" />
               <targetEnds>
                 <association Id="79bc8eb4-725d-4aaf-9873-14e3836e27f3" isDerived="false" sourceEndRoleName="SingleTonViewModel" targetEndRoleName="Vikingeskib" isLeaf="false" isAbstract="false">
@@ -223,6 +267,58 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="ea55a7da-ac5f-4236-be03-0799cdb758bf" />
                 </association>
+                <association Id="168de647-edaa-4c40-8101-da0b9773cf9c" isDerived="false" sourceEndRoleName="VikingeCatalogSingleTon" targetEndRoleName="Kunde" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="7563ac3a-7d85-4152-8246-f01d6663e59e" LastKnownName="Kunde" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1eb97395-78df-478d-b9cc-6b42a5bbf228" name="VikingeCatalogSingleTon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d3060d52-2322-4b3e-96f7-26878ef13d49" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="314919c1-7966-4b6c-95ac-aa74b9fa6e04" name="Kunde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="4a0ae74e-ef2a-433d-b02f-afc2e703f8a5" name="Lower" value="*">
+                            <elementDefinition Id="a9154253-3377-422c-978b-4571352cfac1" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="beeec2a2-99de-4337-96fe-9da40fe4734a" name="Upper" value="*">
+                            <elementDefinition Id="73e87782-610c-4800-8f78-c4e667821686" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="7fac880c-54f2-4093-9d46-8da5c2f5b58f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="85f992d3-7ac4-4d5b-b9e5-1f69dad319ec" />
+                </association>
+                <association Id="5d7fd1bd-084b-442e-be8f-3a0269cdd07c" isDerived="false" sourceEndRoleName="VikingeCatalogSingleTon" targetEndRoleName="Billet" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="f6c9249a-7f55-4a48-b519-b301f3a893fb" LastKnownName="Billet" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="79f3ac96-a5c0-4efe-8d0b-0f969f031842" name="VikingeCatalogSingleTon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="5ccaaac7-f54f-47c5-8784-700b47b02f07" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ea22f502-e44a-468f-8113-528106b6a4c2" name="Billet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="9a6d31d1-c117-4135-9f37-870250ea2c16" name="Lower" value="*">
+                            <elementDefinition Id="de31ad65-64ce-4fcc-8eee-0484a35cf1f3" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="ad93cec1-3562-4e63-9bd9-9f0ae59991f4" name="Upper" value="*">
+                            <elementDefinition Id="da98ab89-e5f0-4230-b0c6-9db95242cc52" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="d95768eb-4a10-4f4b-bacb-632b435370f1" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="4ef3d0fd-9d82-4b72-8975-2ebab062dc61" />
+                </association>
               </targetEnds>
             </class>
           </packageHasNamedElement>
@@ -230,7 +326,12 @@
       </package>
     </logicalClassDesignerModelHasPackages>
     <packageHasNamedElement>
-      <referencedType Id="eda208f4-17dd-4232-a60f-723816005010" name="Instans" isAbstract="false" isLeaf="false" cachedFullName="Instans">
+      <referencedType Id="93cf1126-c164-44dc-8814-bdc2370cf861" name="MainViewModel" isAbstract="false" isLeaf="false" cachedFullName="VIKINGESKIBSMUSEETdomain::ViewModel::MainViewModel">
+        <elementDefinition Id="f33ae015-f15a-4b8f-a76a-d3c1bd32fe21" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6fc087fa-72a2-44fa-8000-2864a26e8738" name="Instans" isAbstract="false" isLeaf="false" cachedFullName="Instans">
         <elementDefinition Id="72a08d53-c927-489c-9491-e957b8309217" />
       </referencedType>
     </packageHasNamedElement>

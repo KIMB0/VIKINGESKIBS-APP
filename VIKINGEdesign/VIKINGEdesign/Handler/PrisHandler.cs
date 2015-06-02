@@ -31,6 +31,10 @@ namespace VIKINGEdesign.Handler
             MainViewModel.Pris = MainViewModel.AntalBorn * MainViewModel.VikingeCatalogSingleton.Priser.ElementAt(2).Pris +
                                  MainViewModel.AntalStuderende * MainViewModel.VikingeCatalogSingleton.Priser.ElementAt(1).Pris +
                                  MainViewModel.AntalVoksne * MainViewModel.VikingeCatalogSingleton.Priser.ElementAt(0).Pris;
+            if (MainViewModel.Sejltur == true)
+            {
+                MainViewModel.Pris += MainViewModel.VikingeCatalogSingleton.Priser.ElementAt(3).Pris;
+            }
         }
     }
 }
