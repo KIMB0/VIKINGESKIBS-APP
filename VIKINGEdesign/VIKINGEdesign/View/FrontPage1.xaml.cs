@@ -121,6 +121,9 @@ namespace VIKINGEdesign
 
         private void Image_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            Uri targetUri = new Uri(@"http://www.bing.com");
+            webView1.Navigate(targetUri);
+            
         }
 
         private void BestilButton_PointerEntered(object sender, PointerRoutedEventArgs e)

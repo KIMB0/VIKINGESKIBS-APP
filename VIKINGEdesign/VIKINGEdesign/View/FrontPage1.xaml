@@ -45,6 +45,7 @@
             <Image HorizontalAlignment="Left" Height="130" Margin="23,0,0,0" VerticalAlignment="Top" Width="252" Grid.ColumnSpan="2" Source="ms-appx:///Assets/Logo.gif"/>
             <Image HorizontalAlignment="Left" Height="80" Margin="1040,27,0,0" VerticalAlignment="Top" Width="88" Grid.Column="1" Source="ms-appx:///Assets/Facebook2.png" Tapped="Image_Tapped"/>
         </Grid>
+        <WebView Name="webView1" Width="1000" Height="800"/>
         <Image HorizontalAlignment="Left" Height="374" Margin="55,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="552" Source="ms-appx:///Assets/Skib2.png"/>
         <DatePicker x:Name="DatoDatepicker" HorizontalAlignment="Left" Margin="181,522,0,0" Grid.Row="1" VerticalAlignment="Top" Date="{Binding DateTime, Mode=TwoWay}"/>
         <StackPanel HorizontalAlignment="Left" Height="306" Margin="1004,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="352">
@@ -70,7 +71,7 @@
             <TextBlock TextWrapping="Wrap" FontSize="26" Foreground="Black" Margin="0,10,0,0"/>
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Margin="262,482,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Vælg dato:" VerticalAlignment="Top" Height="35" Width="124" FontSize="24" Foreground="Black"/>
-        <Button x:Name="BestilButton" Content="BESTIL" HorizontalAlignment="Left" Margin="963,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF1FDA16" Height="57" Width="145" BorderBrush="#FF1FDA16" Foreground="Black" Command="{Binding CreateBilletCommand}"/>
+        <Button x:Name="BestilButton" Content="BESTIL" HorizontalAlignment="Left" Margin="963,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF1FDA16" Height="57" Width="145" BorderBrush="#FF1FDA16" Foreground="Black" Command="{Binding CreateBilletCommand}" PointerEntered="BestilButton_PointerEntered"/>
         <Button x:Name="LaesmereButton" Content="LÆS MERE" HorizontalAlignment="Left" Margin="1111,500,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FFFBB700" Height="57" Width="145" BorderBrush="#FFFBB700" Foreground="Black" PointerEntered="Button_PointerEntered" Click="Button_Click"/>
 
     </Grid>
