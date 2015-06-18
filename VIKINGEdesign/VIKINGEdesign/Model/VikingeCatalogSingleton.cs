@@ -10,15 +10,19 @@ namespace VIKINGEdesign.Model
 {
     class VikingeCatalogSingleton
     {
- 
-        private static VikingeCatalogSingleton _instance = new VikingeCatalogSingleton();
+
+        private static VikingeCatalogSingleton _instance = null;
 
         /// <summary>
         /// Her bliver returnet en instans af VikingeCatalaogSingleton.
         /// </summary>
-        public static VikingeCatalogSingleton Instance
+        public static VikingeCatalogSingleton GetInstance()
         {
-            get { return _instance; }
+            if (null == _instance)
+            {
+                _instance = new VikingeCatalogSingleton();
+            }
+            return _instance;
         }
 
 
