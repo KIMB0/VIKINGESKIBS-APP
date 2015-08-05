@@ -14,11 +14,11 @@ namespace VIKINGEdesign.Handler
     class BilletHandler
     {
         /// <summary>
-        /// Der bliver lavet et object af MainViewModel
+        /// Der bliver lavet en reference af MainViewModel
         /// </summary>
         public MainViewModel MainViewModel { get; set; }
         /// <summary>
-        /// Der bliver lavet et object af PrisHandler
+        /// Der bliver lavet en reference af PrisHandler
         /// </summary>
         public PrisHandler PrisHandler { get; set; }
         /// <summary>
@@ -33,6 +33,8 @@ namespace VIKINGEdesign.Handler
         }
         /// <summary>
         /// Methoden laver en billet ud af alle felter i formularen
+        /// Vores (Regex) regular expressions bruges når vi skal opfylde et mønster. 
+        /// 
         /// </summary>
         public void CreateBillet()
         {
@@ -41,6 +43,9 @@ namespace VIKINGEdesign.Handler
             Regex regexTelefonNr2 = new Regex(@"^\+45\d{8}$");
             Regex regexEmail = new Regex(@"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" + @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$");
             PrisHandler.TotalPris();
+
+
+            // Hvis enkelte felter ikke er udfyldte bliver en af følgende fejl vist.
 
             if (!string.IsNullOrEmpty(MainViewModel.Navn) && !string.IsNullOrEmpty(MainViewModel.Email) && !string.IsNullOrEmpty(MainViewModel.TelefonNr) &&
                 (MainViewModel.AntalBorn + MainViewModel.AntalStuderende + MainViewModel.AntalVoksne) >= 1)
@@ -61,6 +66,7 @@ namespace VIKINGEdesign.Handler
                 {
                     dialog.Content += "Emailen er ikke gyldig.\n";
                 }
+                // Succes kode - Bliver kørt hvis der ikke er nogen problemer.
                 if (
                         DateTimeConverter.DateTimeOffset(MainViewModel.DateTime) >= DateTime.Today &&
                         MainViewModel.Navn.Length >= 2 &&
@@ -100,6 +106,8 @@ namespace VIKINGEdesign.Handler
                     dialog.ShowAsync();
                 }
             }
+               
+                // Bliver kørt, hvis vi slet ikke matcher nogen felter. 
             else
             {
                 dialog.Content += "Alle felter skal udfyldes.";

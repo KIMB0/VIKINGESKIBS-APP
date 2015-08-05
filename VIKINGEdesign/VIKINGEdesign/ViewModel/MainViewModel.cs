@@ -13,9 +13,9 @@ using VIKINGEdesign.Common;
 using VIKINGEdesign.Handler;
 using VIKINGEdesign.Model;
 
-
 namespace VIKINGEdesign.ViewModel
 {
+
     class MainViewModel : INotifyPropertyChanged
     {
         private int _billetId;

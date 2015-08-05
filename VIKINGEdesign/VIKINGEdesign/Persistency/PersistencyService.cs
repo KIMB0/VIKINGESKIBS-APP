@@ -11,6 +11,8 @@ namespace VIKINGEdesign.Persistency
 {
     class PersistencyService
     {
+// Når vi laver en kunde får vi ID retur, da vi skal bruge den til billetten. 
+
         public static int ID;
 
         /// <summary>
@@ -43,6 +45,8 @@ namespace VIKINGEdesign.Persistency
         public static async void SaveKunderAsJsonAsync(Kunde newKunde)
         {
             const string ServerUrl = "http://localhost:3541";
+
+            // Vi opretter et objekt af handleren.
 
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
@@ -161,6 +165,7 @@ namespace VIKINGEdesign.Persistency
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
 
+// IEnumerable er en liste der kan itereres ned igenne. 
             using (var client = new HttpClient(handler)) {
                 client.BaseAddress = new Uri(ServerUrl);
                 client.DefaultRequestHeaders.Clear();

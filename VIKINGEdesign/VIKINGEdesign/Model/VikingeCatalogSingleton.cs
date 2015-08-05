@@ -30,6 +30,7 @@ namespace VIKINGEdesign.Model
         public ObservableCollection<Priser> Priser { get; set; }
         public ObservableCollection<Vikingeskibe> VikingeSkib { get; set; }
 
+        // Inotifier er implementeret i mange af vores klasser, for at kunne benytte "Observer".  
       
         private VikingeCatalogSingleton()
         {
