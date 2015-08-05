@@ -10,6 +10,7 @@ namespace VIKINGEdesign.Converter
     {
         public static DateTime DateTimeOffset(DateTimeOffset date)
         {
+            //Retunere en rigtig datetime.
             return new DateTime(date.Year, date.Month, date.Day);
         }
     }

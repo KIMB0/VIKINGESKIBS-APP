@@ -81,7 +81,7 @@ namespace VIKINGEdesign.ViewModel
 /// </summary>
         public MainViewModel()
         {
-            VikingeCatalogSingleton = Model.VikingeCatalogSingleton.Instance;
+            VikingeCatalogSingleton = Model.VikingeCatalogSingleton.GetInstance();
             PrisHandler = new PrisHandler(this);
             BilletHandler = new BilletHandler(this,PrisHandler);
             SkibeHandler = new SkibeHandler(this);

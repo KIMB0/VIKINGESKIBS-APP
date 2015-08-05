@@ -38,6 +38,7 @@ namespace VIKINGEdesign.Handler
         /// </summary>
         public void CreateBillet()
         {
+            //Begrænsninger
             MessageDialog dialog = new MessageDialog("");
             Regex regexTelefonNr1 = new Regex(@"^\d{8}$");
             Regex regexTelefonNr2 = new Regex(@"^\+45\d{8}$");

@@ -10,15 +10,19 @@ namespace VIKINGEdesign.Model
 {
     class VikingeCatalogSingleton
     {
- 
-        private static VikingeCatalogSingleton _instance = new VikingeCatalogSingleton();
+
+        private static VikingeCatalogSingleton _instance = null;
 
         /// <summary>
         /// Her bliver returnet en instans af VikingeCatalaogSingleton.
         /// </summary>
-        public static VikingeCatalogSingleton Instance
+        public static VikingeCatalogSingleton GetInstance()
         {
-            get { return _instance; }
+            if (null == _instance)
+            {
+                _instance = new VikingeCatalogSingleton();
+            }
+            return _instance;
         }
 
 
@@ -132,6 +136,7 @@ namespace VIKINGEdesign.Model
         /// <param name="dateTime"></param>
         /// <param name="pris"></param>
         /// <param name="sejltur"></param>
+       // gemmer alle værdier i databasen
         public void Add(int antalBorn, int antalStuderende, int antalVoksne, DateTime dateTime, decimal pris, bool sejltur, string email, string navn, string telefonNr)
         {
             Kunde newKunde = new Kunde(email, navn, telefonNr);
